@@ -1,0 +1,1211 @@
+[
+    {
+        "id": 995456,
+        "type": "Mechanical",
+        "description": "Lightweight and versatile road bike, perfect for long-distance cycling.",
+        "model": "AeroSpeed Pro",
+        "brand": "SpeedMaster",
+        "price": 2450,
+        "usage": "Road Cycling",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 685412,
+        "type": "Mechanical",
+        "description": "Sturdy and reliable mountain bike, designed for off-road adventures.",
+        "model": "TrailBlazer MTB",
+        "brand": "AdventureSeeker",
+        "price": 980,
+        "usage": "Mountain Trail Riding",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 137698,
+        "type": "Electric Assist",
+        "description": "Electric folding bike with a compact design, ideal for urban commuting.",
+        "model": "UrbanFold E-Commuter",
+        "brand": "EcoRider",
+        "price": 1590,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 843751,
+        "type": "Electric",
+        "description": "High-performance electric mountain bike with advanced suspension system.",
+        "model": "MountainThrasher E-MTB",
+        "brand": "PowerPeak",
+        "price": 2890,
+        "usage": "Mountain Trail Riding",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 576239,
+        "type": "Mechanical",
+        "description": "All-terrain gravel bike, perfect for exploring rough roads and trails.",
+        "model": "GravelMaster",
+        "brand": "RuggedRides",
+        "price": 1200,
+        "usage": "Gravel Adventures",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 913752,
+        "type": "Mechanical",
+        "description": "Classic cruiser bike with vintage aesthetics, ideal for casual rides.",
+        "model": "RetroCruiser Classic",
+        "brand": "VintageCycles",
+        "price": 790,
+        "usage": "Leisure Riding",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 498172,
+        "type": "Electric Assist",
+        "description": "Compact and foldable electric scooter bike for quick city commutes.",
+        "model": "CityScoot E-Fold",
+        "brand": "EZMotion",
+        "price": 1390,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 781529,
+        "type": "Electric",
+        "description": "Electric cargo bike with spacious front cargo area for convenient transport.",
+        "model": "CargoHauler E-Trike Pro",
+        "brand": "CargoMaster",
+        "price": 3600,
+        "usage": "Cargo Transport",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 297514,
+        "type": "Electric",
+        "description": "Fast and efficient electric racing bike, designed for speed and endurance.",
+        "model": "Speedster E-Pro",
+        "brand": "FastTrack",
+        "price": 3490,
+        "usage": "Performance Racing",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 695018,
+        "type": "Mechanical",
+        "description": "Sleek and modern urban bike, perfect for stylish commuting in the city.",
+        "model": "UrbanStyle 500",
+        "brand": "CityGlide",
+        "price": 920,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 820129,
+        "type": "Electric Assist",
+        "description": "Electric trekking bike with step-through frame, ideal for easygoing rides.",
+        "model": "TrekKING E-Trek Easy Plus",
+        "brand": "ComfortBikes",
+        "price": 2050,
+        "usage": "Trekking Adventures",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 510483,
+        "type": "Electric Assist",
+        "description": "Electric city bike with front hub motor, perfect for city exploration.",
+        "model": "CityCruise E-City",
+        "brand": "EZMotion",
+        "price": 1670,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 944728,
+        "type": "Mechanical",
+        "description": "Elegant road bike with vintage aesthetics, ideal for retro road cycling.",
+        "model": "RetroRoadster Classic",
+        "brand": "VintageCycles",
+        "price": 1290,
+        "usage": "Road Cycling",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 356742,
+        "type": "Mechanical",
+        "description": "Durable and versatile hybrid bike for urban commuting and weekend rides.",
+        "model": "UrbanTrail 800",
+        "brand": "AdventureGear",
+        "price": 890,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 612470,
+        "type": "Electric Assist",
+        "description": "Electric touring bike with front rack, perfect for city and countryside trips.",
+        "model": "UrbanTrek E-Touring",
+        "brand": "EcoRider",
+        "price": 1890,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 941524,
+        "type": "Electric Assist",
+        "description": "E-MTB with full suspension and powerful motor for tackling challenging trails.",
+        "model": "ExtremeSlope E-MTB",
+        "brand": "PowerPeak",
+        "price": 2390,
+        "usage": "Mountain Trail Riding",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 361027,
+        "type": "Mechanical",
+        "description": "Versatile gravel bike for exploring both paved roads and rough trails.",
+        "model": "GravelGladiator",
+        "brand": "RuggedRides",
+        "price": 1390,
+        "usage": "Gravel Adventures",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 930146,
+        "type": "Mechanical",
+        "description": "Classic cruiser bike with a vintage design, perfect for leisurely rides.",
+        "model": "RetroCruiser Deluxe",
+        "brand": "VintageCycles",
+        "price": 820,
+        "usage": "Leisure Riding",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 589364,
+        "type": "Electric Assist",
+        "description": "Compact folding electric bike with lithium battery for extended range.",
+        "model": "Fold-n-Go E-Scoot",
+        "brand": "EZMotion",
+        "price": 1350,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 978331,
+        "type": "Electric",
+        "description": "Electric cargo bike with trailer for transporting heavy loads with ease.",
+        "model": "CargoHauler E-Trike Plus",
+        "brand": "CargoMaster",
+        "price": 3400,
+        "usage": "Cargo Transport",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 732081,
+        "type": "Electric",
+        "description": "Fast and agile electric racing bike, designed for speed enthusiasts.",
+        "model": "SpeedDemon E-Racer",
+        "brand": "FastTrack",
+        "price": 3290,
+        "usage": "Performance Racing",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 163498,
+        "type": "Mechanical",
+        "description": "Stylish urban bike with a retro design and exceptional comfort for city rides.",
+        "model": "CityGlide Deluxe",
+        "brand": "RetroCycles",
+        "price": 800,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 927345,
+        "type": "Electric Assist",
+        "description": "Electric trekking bike with comfortable step-through frame design.",
+        "model": "TrekKING E-Trek Easy",
+        "brand": "ComfortBikes",
+        "price": 1950,
+        "usage": "Trekking Adventures",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 665024,
+        "type": "Electric Assist",
+        "description": "Electric city bike with rear hub motor for smooth acceleration.",
+        "model": "CityGlide E-City",
+        "brand": "EZMotion",
+        "price": 1570,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 529738,
+        "type": "Mechanical",
+        "description": "Classic road bike with vintage charm, perfect for retro cyclists.",
+        "model": "RetroRoadster",
+        "brand": "VintageCycles",
+        "price": 1150,
+        "usage": "Road Cycling",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 925047,
+        "type": "Mechanical",
+        "description": "Durable hybrid bike for commuting and leisure rides on various terrains.",
+        "model": "CrossTrail 600",
+        "brand": "AdventureGear",
+        "price": 850,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 315254,
+        "type": "Electric Assist",
+        "description": "Electric touring bike with front basket for your city adventures.",
+        "model": "UrbanTrek E-City",
+        "brand": "EcoRider",
+        "price": 1780,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 691087,
+        "type": "Electric Assist",
+        "description": "E-MTB with full suspension and powerful motor for tackling challenging trails.",
+        "model": "ExtremeSlope E-MTB",
+        "brand": "PowerPeak",
+        "price": 2390,
+        "usage": "Mountain Trail Riding",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 296474,
+        "type": "Mechanical",
+        "description": "Versatile gravel bike for exploring both paved roads and rough trails.",
+        "model": "GravelGladiator",
+        "brand": "RuggedRides",
+        "price": 1390,
+        "usage": "Gravel Adventures",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 958752,
+        "type": "Mechanical",
+        "description": "Classic cruiser bike with a vintage design, perfect for leisurely rides.",
+        "model": "RetroCruiser Deluxe",
+        "brand": "VintageCycles",
+        "price": 820,
+        "usage": "Leisure Riding",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 589561,
+        "type": "Electric Assist",
+        "description": "Compact folding electric bike with lithium battery for extended range.",
+        "model": "Fold-n-Go E-Scoot",
+        "brand": "EZMotion",
+        "price": 1350,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 973561,
+        "type": "Electric",
+        "description": "Electric cargo bike with trailer for transporting heavy loads with ease.",
+        "model": "CargoHauler E-Trike Plus",
+        "brand": "CargoMaster",
+        "price": 3400,
+        "usage": "Cargo Transport",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 721548,
+        "type": "Electric",
+        "description": "Fast and agile electric racing bike, designed for speed enthusiasts.",
+        "model": "SpeedDemon E-Racer",
+        "brand": "FastTrack",
+        "price": 3290,
+        "usage": "Performance Racing",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 169025,
+        "type": "Mechanical",
+        "description": "Stylish urban bike with a retro design and exceptional comfort for city rides.",
+        "model": "CityGlide Deluxe",
+        "brand": "RetroCycles",
+        "price": 800,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 936127,
+        "type": "Electric Assist",
+        "description": "Electric trekking bike with comfortable step-through frame design.",
+        "model": "TrekKING E-Trek Easy",
+        "brand": "ComfortBikes",
+        "price": 1950,
+        "usage": "Trekking Adventures",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 662514,
+        "type": "Electric Assist",
+        "description": "Electric city bike with rear hub motor for smooth acceleration.",
+        "model": "CityGlide E-City",
+        "brand": "EZMotion",
+        "price": 1570,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 530974,
+        "type": "Mechanical",
+        "description": "Classic road bike with vintage charm, perfect for retro cyclists.",
+        "model": "RetroRoadster",
+        "brand": "VintageCycles",
+        "price": 1150,
+        "usage": "Road Cycling",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 924078,
+        "type": "Mechanical",
+        "description": "Durable hybrid bike for commuting and leisure rides on various terrains.",
+        "model": "CrossTrail 600",
+        "brand": "AdventureGear",
+        "price": 850,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 358241,
+        "type": "Electric Assist",
+        "description": "Electric touring bike with front basket for your city adventures.",
+        "model": "UrbanTrek E-City",
+        "brand": "EcoRider",
+        "price": 1780,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 687094,
+        "type": "Electric Assist",
+        "description": "E-MTB with full suspension and powerful motor for tackling challenging trails.",
+        "model": "ExtremeSlope E-MTB",
+        "brand": "PowerPeak",
+        "price": 2390,
+        "usage": "Mountain Trail Riding",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 296517,
+        "type": "Mechanical",
+        "description": "Versatile gravel bike for exploring both paved roads and rough trails.",
+        "model": "GravelGladiator",
+        "brand": "RuggedRides",
+        "price": 1390,
+        "usage": "Gravel Adventures",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 957426,
+        "type": "Mechanical",
+        "description": "Classic cruiser bike with a vintage design, perfect for leisurely rides.",
+        "model": "RetroCruiser Deluxe",
+        "brand": "VintageCycles",
+        "price": 820,
+        "usage": "Leisure Riding",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 588276,
+        "type": "Electric Assist",
+        "description": "Compact folding electric bike with lithium battery for extended range.",
+        "model": "Fold-n-Go E-Scoot",
+        "brand": "EZMotion",
+        "price": 1350,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 974218,
+        "type": "Electric",
+        "description": "Electric cargo bike with trailer for transporting heavy loads with ease.",
+        "model": "CargoHauler E-Trike Plus",
+        "brand": "CargoMaster",
+        "price": 3400,
+        "usage": "Cargo Transport",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 731989,
+        "type": "Electric",
+        "description": "Fast and agile electric racing bike, designed for speed enthusiasts.",
+        "model": "SpeedDemon E-Racer",
+        "brand": "FastTrack",
+        "price": 3290,
+        "usage": "Performance Racing",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 162347,
+        "type": "Mechanical",
+        "description": "Stylish urban bike with a retro design and exceptional comfort for city rides.",
+        "model": "CityGlide Deluxe",
+        "brand": "RetroCycles",
+        "price": 800,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 939524,
+        "type": "Electric Assist",
+        "description": "Electric trekking bike with comfortable step-through frame design.",
+        "model": "TrekKING E-Trek Easy",
+        "brand": "ComfortBikes",
+        "price": 1950,
+        "usage": "Trekking Adventures",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 660541,
+        "type": "Electric Assist",
+        "description": "Electric city bike with rear hub motor for smooth acceleration.",
+        "model": "CityGlide E-City",
+        "brand": "EZMotion",
+        "price": 1570,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 533429,
+        "type": "Mechanical",
+        "description": "Classic road bike with vintage charm, perfect for retro cyclists.",
+        "model": "RetroRoadster",
+        "brand": "VintageCycles",
+        "price": 1150,
+        "usage": "Road Cycling",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 920741,
+        "type": "Mechanical",
+        "description": "Durable hybrid bike for commuting and leisure rides on various terrains.",
+        "model": "CrossTrail 600",
+        "brand": "AdventureGear",
+        "price": 850,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 357512,
+        "type": "Electric Assist",
+        "description": "Electric touring bike with front basket for your city adventures.",
+        "model": "UrbanTrek E-City",
+        "brand": "EcoRider",
+        "price": 1780,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 684209,
+        "type": "Electric Assist",
+        "description": "E-MTB with full suspension and powerful motor for tackling challenging trails.",
+        "model": "ExtremeSlope E-MTB",
+        "brand": "PowerPeak",
+        "price": 2390,
+        "usage": "Mountain Trail Riding",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 292642,
+        "type": "Mechanical",
+        "description": "Versatile gravel bike for exploring both paved roads and rough trails.",
+        "model": "GravelGladiator",
+        "brand": "RuggedRides",
+        "price": 1390,
+        "usage": "Gravel Adventures",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 957836,
+        "type": "Mechanical",
+        "description": "Classic cruiser bike with a vintage design, perfect for leisurely rides.",
+        "model": "RetroCruiser Deluxe",
+        "brand": "VintageCycles",
+        "price": 820,
+        "usage": "Leisure Riding",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 581349,
+        "type": "Electric Assist",
+        "description": "Compact folding electric bike with lithium battery for extended range.",
+        "model": "Fold-n-Go E-Scoot",
+        "brand": "EZMotion",
+        "price": 1350,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 971358,
+        "type": "Electric",
+        "description": "Electric cargo bike with trailer for transporting heavy loads with ease.",
+        "model": "CargoHauler E-Trike Plus",
+        "brand": "CargoMaster",
+        "price": 3400,
+        "usage": "Cargo Transport",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 718903,
+        "type": "Electric",
+        "description": "Fast and agile electric racing bike, designed for speed enthusiasts.",
+        "model": "SpeedDemon E-Racer",
+        "brand": "FastTrack",
+        "price": 3290,
+        "usage": "Performance Racing",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 164256,
+        "type": "Mechanical",
+        "description": "Stylish urban bike with a retro design and exceptional comfort for city rides.",
+        "model": "CityGlide Deluxe",
+        "brand": "RetroCycles",
+        "price": 800,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 938415,
+        "type": "Electric Assist",
+        "description": "Electric trekking bike with comfortable step-through frame design.",
+        "model": "TrekKING E-Trek Easy",
+        "brand": "ComfortBikes",
+        "price": 1950,
+        "usage": "Trekking Adventures",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 664372,
+        "type": "Electric Assist",
+        "description": "Electric city bike with rear hub motor for smooth acceleration.",
+        "model": "CityGlide E-City",
+        "brand": "EZMotion",
+        "price": 1570,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 532458,
+        "type": "Mechanical",
+        "description": "Classic road bike with vintage charm, perfect for retro cyclists.",
+        "model": "RetroRoadster",
+        "brand": "VintageCycles",
+        "price": 1150,
+        "usage": "Road Cycling",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 919785,
+        "type": "Mechanical",
+        "description": "Durable hybrid bike for commuting and leisure rides on various terrains.",
+        "model": "CrossTrail 600",
+        "brand": "AdventureGear",
+        "price": 850,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 355819,
+        "type": "Electric Assist",
+        "description": "Electric touring bike with front basket for your city adventures.",
+        "model": "UrbanTrek E-City",
+        "brand": "EcoRider",
+        "price": 1780,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 686543,
+        "type": "Electric Assist",
+        "description": "E-MTB with full suspension and powerful motor for tackling challenging trails.",
+        "model": "ExtremeSlope E-MTB",
+        "brand": "PowerPeak",
+        "price": 2390,
+        "usage": "Mountain Trail Riding",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 291486,
+        "type": "Mechanical",
+        "description": "Versatile gravel bike for exploring both paved roads and rough trails.",
+        "model": "GravelGladiator",
+        "brand": "RuggedRides",
+        "price": 1390,
+        "usage": "Gravel Adventures",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 955728,
+        "type": "Mechanical",
+        "description": "Classic cruiser bike with a vintage design, perfect for leisurely rides.",
+        "model": "RetroCruiser Deluxe",
+        "brand": "VintageCycles",
+        "price": 820,
+        "usage": "Leisure Riding",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 581936,
+        "type": "Electric Assist",
+        "description": "Compact folding electric bike with lithium battery for extended range.",
+        "model": "Fold-n-Go E-Scoot",
+        "brand": "EZMotion",
+        "price": 1350,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 969378,
+        "type": "Electric",
+        "description": "Electric cargo bike with trailer for transporting heavy loads with ease.",
+        "model": "CargoHauler E-Trike Plus",
+        "brand": "CargoMaster",
+        "price": 3400,
+        "usage": "Cargo Transport",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 721468,
+        "type": "Electric",
+        "description": "Fast and agile electric racing bike, designed for speed enthusiasts.",
+        "model": "SpeedDemon E-Racer",
+        "brand": "FastTrack",
+        "price": 3290,
+        "usage": "Performance Racing",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 169803,
+        "type": "Mechanical",
+        "description": "Stylish urban bike with a retro design and exceptional comfort for city rides.",
+        "model": "CityGlide Deluxe",
+        "brand": "RetroCycles",
+        "price": 800,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 937652,
+        "type": "Electric Assist",
+        "description": "Electric trekking bike with comfortable step-through frame design.",
+        "model": "TrekKING E-Trek Easy",
+        "brand": "ComfortBikes",
+        "price": 1950,
+        "usage": "Trekking Adventures",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 661523,
+        "type": "Electric Assist",
+        "description": "Electric city bike with rear hub motor for smooth acceleration.",
+        "model": "CityGlide E-City",
+        "brand": "EZMotion",
+        "price": 1570,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 537841,
+        "type": "Mechanical",
+        "description": "Classic road bike with vintage charm, perfect for retro cyclists.",
+        "model": "RetroRoadster",
+        "brand": "VintageCycles",
+        "price": 1150,
+        "usage": "Road Cycling",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 919826,
+        "type": "Mechanical",
+        "description": "Durable hybrid bike for commuting and leisure rides on various terrains.",
+        "model": "CrossTrail 600",
+        "brand": "AdventureGear",
+        "price": 850,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 356418,
+        "type": "Electric Assist",
+        "description": "Electric touring bike with front basket for your city adventures.",
+        "model": "UrbanTrek E-City",
+        "brand": "EcoRider",
+        "price": 1780,
+        "usage": "City Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 682749,
+        "type": "Electric Assist",
+        "description": "E-MTB with full suspension and powerful motor for tackling challenging trails.",
+        "model": "ExtremeSlope E-MTB",
+        "brand": "PowerPeak",
+        "price": 2390,
+        "usage": "Mountain Trail Riding",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 291065,
+        "type": "Mechanical",
+        "description": "Versatile gravel bike for exploring both paved roads and rough trails.",
+        "model": "GravelGladiator",
+        "brand": "RuggedRides",
+        "price": 1390,
+        "usage": "Gravel Adventures",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 908716,
+        "type": "Mechanical",
+        "description": "Comfortable and reliable commuter bike for daily urban transportation.",
+        "model": "UrbanCommuter Pro",
+        "brand": "CityCycles",
+        "price": 890,
+        "usage": "City Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 167235,
+        "type": "Mechanical",
+        "description": "Durable and versatile touring bike for extended journeys on various terrains.",
+        "model": "Expedition Tourer",
+        "brand": "AdventureSeeker",
+        "price": 1150,
+        "usage": "Touring",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 529841,
+        "type": "Electric Assist",
+        "description": "Sleek and powerful electric road bike for efficient city and road cycling.",
+        "model": "UrbanRoadster E-Bike",
+        "brand": "EcoRider",
+        "price": 2100,
+        "usage": "Urban Commuting",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 145239,
+        "type": "Electric",
+        "description": "E-MTB with full suspension and powerful motor for tackling challenging trails.",
+        "model": "ExtremeSlope E-MTB",
+        "brand": "PowerPeak",
+        "price": 2390,
+        "usage": "Mountain Trail Riding",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 845672,
+        "type": "Mechanical",
+        "description": "Versatile gravel bike for exploring both paved roads and rough trails.",
+        "model": "GravelGladiator",
+        "brand": "RuggedRides",
+        "price": 1390,
+        "usage": "Gravel Adventures",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 902314,
+        "type": "Mechanical",
+        "description": "Classic cruiser bike with a vintage design, perfect for leisurely rides.",
+        "model": "RetroCruiser Deluxe",
+        "brand": "VintageCycles",
+        "price": 820,
+        "usage": "Leisure Riding",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 497621,
+        "type": "Electric Assist",
+        "description": "Compact folding electric bike with lithium battery for extended range.",
+        "model": "Fold-n-Go E-Scoot",
+        "brand": "EZMotion",
+        "price": 1350,
+        "usage": "City Commuting",
+        "image": "https://i0.wp.com/www.kinetics-online.co.uk/test/wp-content/uploads/2023/06/C2C6E180-49B9-4449-BBC6-4AD39F8CF283-scaled.jpeg?ssl=1"
+    },
+    {
+        "id": 761428,
+        "type": "Electric",
+        "description": "Electric cargo bike with trailer for transporting heavy loads with ease.",
+        "model": "CargoHauler E-Trike Plus",
+        "brand": "CargoMaster",
+        "price": 3400,
+        "usage": "Cargo Transport",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 312576,
+        "type": "Electric",
+        "description": "Fast and agile electric racing bike, designed for speed enthusiasts.",
+        "model": "SpeedDemon E-Racer",
+        "brand": "FastTrack",
+        "price": 3290,
+        "usage": "Performance Racing",
+        "image": "https://i0.wp.com/www.kinetics-online.co.uk/test/wp-content/uploads/2023/06/C2C6E180-49B9-4449-BBC6-4AD39F8CF283-scaled.jpeg?ssl=1"
+    },
+    {
+        "id": 991870,
+        "type": "Mechanical",
+        "description": "Stylish urban bike with a retro design and exceptional comfort for city rides.",
+        "model": "CityGlide Deluxe",
+        "brand": "RetroCycles",
+        "price": 800,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 207381,
+        "type": "Electric Assist",
+        "description": "Electric trekking bike with comfortable step-through frame design.",
+        "model": "TrekKING E-Trek Easy",
+        "brand": "ComfortBikes",
+        "price": 1950,
+        "usage": "Trekking Adventures",
+        "image": "https://i0.wp.com/www.kinetics-online.co.uk/test/wp-content/uploads/2023/06/C2C6E180-49B9-4449-BBC6-4AD39F8CF283-scaled.jpeg?ssl=1"
+    },
+    {
+        "id": 623198,
+        "type": "Electric Assist",
+        "description": "Electric city bike with rear hub motor for smooth acceleration.",
+        "model": "CityGlide E-City",
+        "brand": "EZMotion",
+        "price": 1570,
+        "usage": "City Commuting",
+        "image": "https://i0.wp.com/www.kinetics-online.co.uk/test/wp-content/uploads/2023/06/C2C6E180-49B9-4449-BBC6-4AD39F8CF283-scaled.jpeg?ssl=1"
+    },
+    {
+        "id": 520374,
+        "type": "Mechanical",
+        "description": "Classic road bike with vintage charm, perfect for retro cyclists.",
+        "model": "RetroRoadster",
+        "brand": "VintageCycles",
+        "price": 1150,
+        "usage": "Road Cycling",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 950234,
+        "type": "Mechanical",
+        "description": "Durable hybrid bike for commuting and leisure rides on various terrains.",
+        "model": "CrossTrail 600",
+        "brand": "AdventureGear",
+        "price": 850,
+        "usage": "Urban Commuting",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 354729,
+        "type": "Electric Assist",
+        "description": "Electric touring bike with front basket for your city adventures.",
+        "model": "UrbanTrek E-City",
+        "brand": "EcoRider",
+        "price": 1780,
+        "usage": "City Commuting",
+        "image": "https://i0.wp.com/www.kinetics-online.co.uk/test/wp-content/uploads/2023/06/C2C6E180-49B9-4449-BBC6-4AD39F8CF283-scaled.jpeg?ssl=1"
+    },
+    {
+        "id": 681012,
+        "type": "Electric Assist",
+        "description": "E-MTB with full suspension and powerful motor for tackling challenging trails.",
+        "model": "ExtremeSlope E-MTB",
+        "brand": "PowerPeak",
+        "price": 2390,
+        "usage": "Mountain Trail Riding",
+        "image": "https://i0.wp.com/www.kinetics-online.co.uk/test/wp-content/uploads/2023/06/C2C6E180-49B9-4449-BBC6-4AD39F8CF283-scaled.jpeg?ssl=1"
+    },
+    {
+        "id": 231459,
+        "type": "Mechanical",
+        "description": "Versatile gravel bike for exploring both paved roads and rough trails.",
+        "model": "GravelGladiator",
+        "brand": "RuggedRides",
+        "price": 1390,
+        "usage": "Gravel Adventures",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 958412,
+        "type": "Mechanical",
+        "description": "Classic cruiser bike with a vintage design, perfect for leisurely rides.",
+        "model": "RetroCruiser Deluxe",
+        "brand": "VintageCycles",
+        "price": 820,
+        "usage": "Leisure Riding",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 587349,
+        "type": "Electric Assist",
+        "description": "Compact folding electric bike with lithium battery for extended range.",
+        "model": "Fold-n-Go E-Scoot",
+        "brand": "EZMotion",
+        "price": 1350,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Antec1991.JPG"
+    },
+    {
+        "id": 843246,
+        "type": "Electric",
+        "description": "Electric cargo bike with trailer for transporting heavy loads with ease.",
+        "model": "CargoHauler E-Trike Plus",
+        "brand": "CargoMaster",
+        "price": 3400,
+        "usage": "Cargo Transport",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRurW44kKVQkF2IyUH3ZSCmjvLivpmYk4F6TU-aBKH70xW68nQTnJSPZjBiwqA0ykUz9UA&usqp=CAU"
+    },
+    {
+        "id": 751023,
+        "type": "Electric",
+        "description": "Fast and agile electric racing bike, designed for speed enthusiasts.",
+        "model": "SpeedDemon E-Racer",
+        "brand": "FastTrack",
+        "price": 3290,
+        "usage": "Performance Racing",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ04LymLCW4_Xt1ijWzz-JodKE7FIhtwZF4zW5C77RTjfVrUaJU_6QynZPEeihH5MnCELo&usqp=CAU"
+    },
+    {
+        "id": 169481,
+        "type": "Mechanical",
+        "description": "Stylish urban bike with a retro design and exceptional comfort for city rides.",
+        "model": "CityGlide Deluxe",
+        "brand": "RetroCycles",
+        "price": 800,
+        "usage": "Urban Commuting",
+        "image": "https://lirp.cdn-website.com/ee71ac32/dms3rep/multi/opt/img0n3095647-640w.jpg"
+    },
+    {
+        "id": 932681,
+        "type": "Electric Assist",
+        "description": "Electric trekking bike with comfortable step-through frame design.",
+        "model": "TrekKING E-Trek Easy",
+        "brand": "ComfortBikes",
+        "price": 1950,
+        "usage": "Trekking Adventures",
+        "image": "https://mynextbike.co.uk/cdn/shop/files/IMG_4493.jpg?v=1689532366&width=1000"
+    },
+
+   
+   
+
+
+
+
+
+
+    
+    {
+        "id": 662487,
+        "type": "Electric Assist",
+        "description": "Electric city bike with rear hub motor for smooth acceleration.",
+        "model": "CityGlide E-City",
+        "brand": "EZMotion",
+        "price": 1570,
+        "usage": "City Commuting",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNT2qsOcfwwxLyK7fIA9J3Ivoxm7b2bnTV_r4IK"
+    },
+    {
+        "id": 538124,
+        "type": "Mechanical",
+        "description": "Classic road bike with vintage charm, perfect for retro cyclists.",
+        "model": "RetroRoadster",
+        "brand": "VintageCycles",
+        "price": 1150,
+        "usage": "Road Cycling",
+        "image": "https://dd0f2wgjtus3v.cloudfront.net/img/270x200/d4bd4b78e78c00155b659fcbfd001b4be1282bac30203.webp"
+    },
+    {
+        "id": 929417,
+        "type": "Mechanical",
+        "description": "Durable hybrid bike for commuting and leisure rides on various terrains.",
+        "model": "CrossTrail 600",
+        "brand": "AdventureGear",
+        "price": 850,
+        "usage": "Urban Commuting",
+        "image": "https://media.karousell.com/media/photos/products/2018/09/16/second_hand_bicycle_1537081399_25fc719e_progressive.jpg"
+    },
+    {
+        "id": 354220,
+        "type": "Electric Assist",
+        "description": "Electric touring bike with front basket for your city adventures.",
+        "model": "UrbanTrek E-City",
+        "brand": "EcoRider",
+        "price": 1780,
+        "usage": "City Commuting",
+        "image": "https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/c7c32224-14c7-41a6-9095-83b67d4f8e00/86"
+    },
+    {
+        "id": 684569,
+        "type": "Electric Assist",
+        "description": "E-MTB with full suspension and powerful motor for tackling challenging trails.",
+        "model": "ExtremeSlope E-MTB",
+        "brand": "PowerPeak",
+        "price": 2390,
+        "usage": "Mountain Trail Riding",
+        "image": "https://mynextbike.co.uk/cdn/shop/files/IMG_0906_1.jpg?v=1689274007&width=1000"
+    },
+    {
+        "id": 258434,
+        "type": "Mechanical",
+        "description": "Versatile gravel bike for exploring both paved roads and rough trails.",
+        "model": "GravelGladiator",
+        "brand": "RuggedRides",
+        "price": 1390,
+        "usage": "Gravel Adventures",
+        "image": "https://www.cyclelab.com/uploads/products/721EF2E6-6F0C-4375-ADCB-DA8F9769B177.png"
+    },
+    {
+        "id": 950127,
+        "type": "Mechanical",
+        "description": "Classic cruiser bike with a vintage design, perfect for leisurely rides.",
+        "model": "RetroCruiser Deluxe",
+        "brand": "VintageCycles",
+        "price": 820,
+        "usage": "Leisure Riding",
+        "image": "https://i.ebayimg.com/images/g/E~UAAOSwPRth9BIS/s-l1600.jpg"
+    },
+    {
+        "id": 572384,
+        "type": "Electric Assist",
+        "description": "Compact folding electric bike with lithium battery for extended range.",
+        "model": "Fold-n-Go E-Scoot",
+        "brand": "EZMotion",
+        "price": 1350,
+        "usage": "City Commuting",
+        "image": "https://www.leisurelakesbikes.com/images/SANTACRUZ-HECKLER-2NDH-FOG-.jpg"
+    },
+    {
+        "id": 973412,
+        "type": "Electric",
+        "description": "Electric cargo bike with trailer for transporting heavy loads with ease.",
+        "model": "CargoHauler E-Trike Plus",
+        "brand": "CargoMaster",
+        "price": 3400,
+        "usage": "Cargo Transport",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNoHs6vyIsT6lcyDr99PdvgReX9dAhkcqJKHqL6"
+    },
+    {
+        "id": 721073,
+        "type": "Electric",
+        "description": "Fast and agile electric racing bike, designed for speed enthusiasts.",
+        "model": "SpeedDemon E-Racer",
+        "brand": "FastTrack",
+        "price": 1100,
+        "usage": "Performance Racing",
+        "image": "https://i0.wp.com/www.kinetics-online.co.uk/test/wp-content/uploads/2023/06/C2C6E180-49B9-4449-BBC6-4AD39F8CF283-scaled.jpeg?ssl=1"
+    },
+    {
+        "id": 169598,
+        "type": "Mechanical",
+        "description": "Stylish urban bike with a retro design and exceptional comfort for city rides.",
+        "model": "CityGlide Deluxe",
+        "brand": "RetroCycles",
+        "price": 800,
+        "usage": "Urban Commuting",
+        "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/628/948fb7bd-ff69-438b-8024-e75f3685d6f7.webp"
+    },
+    {
+        "id": 935241,
+        "type": "Electric Assist",
+        "description": "Electric trekking bike with comfortable step-through frame design.",
+        "model": "TrekKING E-Trek Easy",
+        "brand": "ComfortBikes",
+        "price": 1950,
+        "usage": "Trekking Adventures",
+        "image": "https://www.picclickimg.com/eBYAAOSwmrtkh2ux/electric-bike-used.webp"
+    },
+    {
+        "id": 667496,
+        "type": "Electric Assist",
+        "description": "Electric city bike with rear hub motor for smooth acceleration.",
+        "model": "CityGlide E-City",
+        "brand": "EZMotion",
+        "price": 1570,
+        "usage": "City Commuting",
+        "image": "https://i0.wp.com/www.kinetics-online.co.uk/test/wp-content/uploads/2023/06/C2C6E180-49B9-4449-BBC6-4AD39F8CF283-scaled.jpeg?ssl=1"
+    },
+    {
+        "id": 531348,
+        "type": "Mechanical",
+        "description": "Classic road bike with vintage charm, perfect for retro cyclists.",
+        "model": "RetroRoadster",
+        "brand": "VintageCycles",
+        "price": 1150,
+        "usage": "Road Cycling",
+        "image": "https://www.cyclelab.com/uploads/products/721EF2E6-6F0C-4375-ADCB-DA8F9769B177.png"
+    },
+    {
+        "id": 926475,
+        "type": "Mechanical",
+        "description": "Durable hybrid bike for commuting and leisure rides on various terrains.",
+        "model": "CrossTrail 600",
+        "brand": "AdventureGear",
+        "price": 850,
+        "usage": "Urban Commuting",
+        "image": "https://www.cyclelab.com/uploads/products/721EF2E6-6F0C-4375-ADCB-DA8F9769B177.png"
+    },
+    {
+        "id": 355246,
+        "type": "Electric Assist",
+        "description": "Electric touring bike with front basket for your city adventures.",
+        "model": "UrbanTrek E-City",
+        "brand": "Motorrad",
+        "price": 1780,
+        "usage": "City Commuting",
+        "image": "https://i0.wp.com/www.kinetics-online.co.uk/test/wp-content/uploads/2023/06/C2C6E180-49B9-4449-BBC6-4AD39F8CF283-scaled.jpeg?ssl=1"
+    },
+    {
+        "id": 689427,
+        "type": "Electric Assist",
+        "description": "E-MTB with full suspension and powerful motor for tackling challenging trails.",
+        "model": "ExtremeSlope E-MTB",
+        "brand": "Nexzu",
+        "price": 2390,
+        "usage": "Mountain Trail Riding",
+        "image": "https://i0.wp.com/www.kinetics-online.co.uk/test/wp-content/uploads/2023/06/C2C6E180-49B9-4449-BBC6-4AD39F8CF283-scaled.jpeg?ssl=1"
+    },
+    {
+        "id": 255034,
+        "type": "Mechanical",
+        "description": "Versatile gravel bike for exploring both paved roads and rough trails.",
+        "model": "GravelGladiator",
+        "brand": "RuggedRides",
+        "price": 1390,
+        "usage": "Gravel Adventures",
+        "image": "https://www.cyclelab.com/uploads/products/721EF2E6-6F0C-4375-ADCB-DA8F9769B177.png"
+    },
+    {
+        "id": 950712,
+        "type": "Mechanical",
+        "description": "Classic cruiser bike with a vintage design, perfect for leisurely rides.",
+        "model": "RetroCruiser Deluxe",
+        "brand": "VintageCycles",
+        "price": 820,
+        "usage": "Leisure Riding",
+        "image": "https://www.cyclelab.com/uploads/products/721EF2E6-6F0C-4375-ADCB-DA8F9769B177.png"
+    },
+    {
+        "id": 573284,
+        "type": "Electric Assist",
+        "description": "Compact folding electric bike with lithium battery for extended range.",
+        "model": "Fold-n-Go E-Scoot",
+        "brand": "EZMotion",
+        "price": 1350,
+        "usage": "City Commuting",
+        "image": "https://i0.wp.com/www.kinetics-online.co.uk/test/wp-content/uploads/2023/06/C2C6E180-49B9-4449-BBC6-4AD39F8CF283-scaled.jpeg?ssl=1"
+    }
+]
