@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
+///////  not yet done any changes, this is the default original file when created /////////
+
 function App() {
   const [count, setCount] = useState(0)
 
