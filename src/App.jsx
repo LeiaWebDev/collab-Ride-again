@@ -1,17 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import HomePage from './pages/HomePage'
-import LoginPage from './pages/LoginPage'
-import SignupPage from './pages/SignupPage'
-import NavBar from './components/NavBar'
-import { Routes, Route } from "react-router-dom"
-import CreateAd from './pages/CreateAd'
-import ValidatedAd from './pages/ValidatedAd'
+import { useState } from "react";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
+import "./App.css";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+import NavBar from "./components/NavBar";
+import { Routes, Route } from "react-router-dom";
+import CreateAd from "./pages/CreateAd";
+import ValidatedAd from "./pages/ValidatedAd";
 // import Favoriting from "./pages/Favoriting"
 import IsLoggedIn from "./components/IsLoggedIn"
 import SeeMyAds from './pages/SeeMyAds'
+import OneBike from "./pages/OneBike"
 
 
 
@@ -43,10 +44,10 @@ function App() {
         <Route path="/validated-ad/:id" element={<ValidatedAd />} />
         {/* <Route path="/seemyads" element={<SeeMyAds />} /> */}
         <Route path="/ads/:adId" element={<SeeMyAds />} />
+        <Route path="/bike/:id" element={<OneBike />} /> {/* Ajoutez cette ligne pour la page de description */}
 
-
-				{/* Added a Route protection, see IsLoggedIn component for more info */}
-				{/* <Route
+                {/* Added a Route protection, see IsLoggedIn component for more info */}
+                {/* <Route
 					path="/favorites"
 					element={
 						<IsLoggedIn user={user}>
@@ -54,9 +55,9 @@ function App() {
 						</IsLoggedIn>
 					}
 				/> */}
-			</Routes>
-    </>
-  )
+            </Routes>
+        </>
+    );
 }
 
-export default App
+export default App;
