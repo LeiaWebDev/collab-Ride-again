@@ -79,6 +79,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function HomePage() {
     // 2 on line 86, we are using useState hook to create a state variable called randomCategories
@@ -137,9 +138,13 @@ function HomePage() {
                 {randomCategories.mechanical.map((category) => (
                     <section key={category.id}>
                         <h2>{category.model}</h2>
+                        <h2>{category.description}</h2>
                         <p>Type: {category.type}</p>
                         <p>Price: {category.price}</p>
-                        <img src={category.image} alt={category.type} />
+                        <Link to={`/bike/${category.id}`}>
+                            <img src={category.image} alt={category.type} />
+                        </Link>
+                        {/* <img src={category.image} alt={category.type} /> */}
                     </section>
                 ))}
             </div>
@@ -149,6 +154,7 @@ function HomePage() {
                 {randomCategories.electric.map((category) => (
                     <section key={category.id}>
                         <h2>{category.model}</h2>
+                        <h2>{category.description}</h2>
                         <p>Type: {category.type}</p>
                         <p>Price: {category.price}</p>
                         <img src={category.image} alt={category.type} />
@@ -161,12 +167,14 @@ function HomePage() {
                 {randomCategories.electricAssist.map((category) => (
                     <section key={category.id}>
                         <h2>{category.model}</h2>
+                        <h2>{category.description}</h2>
                         <p>Type: {category.type}</p>
                         <p>Price: {category.price}</p>
                         <img src={category.image} alt={category.type} />
                     </section>
                 ))}
             </div>
+            <button>Add an ad</button>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
@@ -11,6 +11,7 @@ import CreateAd from "./pages/CreateAd";
 import ValidatedAd from "./pages/ValidatedAd";
 // import Favoriting from "./pages/Favoriting"
 import IsLoggedIn from "./components/IsLoggedIn";
+import OneBike from "./pages/OneBike";
 
 function App() {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
@@ -41,7 +42,7 @@ function App() {
                 <Route path="/signup" element={<SignupPage />} />
                 <Route path="/createad" element={<CreateAd />} />
                 <Route path="/validatedad" element={<ValidatedAd />} />
-
+                <Route path="/bike/:id" element={<OneBike />} /> {/* Ajoutez cette ligne pour la page de description */}
                 {/* Added a Route protection, see IsLoggedIn component for more info */}
                 {/* <Route
 					path="/favorites"
