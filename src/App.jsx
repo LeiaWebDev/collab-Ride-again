@@ -8,8 +8,9 @@ import SignupPage from './pages/SignupPage'
 import NavBar from './components/NavBar'
 import { Routes, Route } from "react-router-dom"
 import CreateAd from './pages/CreateAd'
+import ValidatedAd from './pages/ValidatedAd'
 // import Favoriting from "./pages/Favoriting"
-// import IsLoggedIn from "./components/IsLoggedIn"
+import IsLoggedIn from "./components/IsLoggedIn"
 
 
 
@@ -38,6 +39,7 @@ function App() {
 				<Route path="/login" element={<LoginPage storeUser={storeUser} />} />
 				<Route path="/signup" element={<SignupPage />} />
         <Route path="/createad" element={<CreateAd />} />
+        <Route path="/validatedad" element={<ValidatedAd />} />
 
 				{/* Added a Route protection, see IsLoggedIn component for more info */}
 				{/* <Route

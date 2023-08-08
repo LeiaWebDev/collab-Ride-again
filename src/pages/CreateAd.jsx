@@ -2,6 +2,8 @@ import React, { useState, useNavigate, useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import axios from "axios"
 import FileUploader from '../components/FileUploader'
+import ValidatedAd from './ValidatedAd'
+
 
 
 const API_URL = "https://ride-again.adaptable.app"
@@ -86,8 +88,10 @@ function CreateAd() {
         try {
             const response = await axios.post(`${API_URL}/ads`, adToCreate)
             console.log(response.data)
-            // navigate(`/createad`)
+            // navigate(`/validatead`)
             // Redirect or perform actions upon success
+            
+
         } catch (error) {
             console.log(error)
         }
