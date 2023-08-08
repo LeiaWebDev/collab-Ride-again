@@ -11,6 +11,7 @@ import CreateAd from './pages/CreateAd'
 import ValidatedAd from './pages/ValidatedAd'
 // import Favoriting from "./pages/Favoriting"
 import IsLoggedIn from "./components/IsLoggedIn"
+import SeeMyAds from './pages/SeeMyAds'
 
 
 
@@ -38,8 +39,11 @@ function App() {
 				<Route path="/" element={<HomePage />} />
 				<Route path="/login" element={<LoginPage storeUser={storeUser} />} />
 				<Route path="/signup" element={<SignupPage />} />
-        <Route path="/createad" element={<CreateAd />} />
-        <Route path="/validatedad" element={<ValidatedAd />} />
+        <Route path="/createad" element={<CreateAd user={user} />} />
+        <Route path="/validated-ad/:id" element={<ValidatedAd />} />
+        {/* <Route path="/seemyads" element={<SeeMyAds />} /> */}
+        <Route path="/ads/:adId" element={<SeeMyAds />} />
+
 
 				{/* Added a Route protection, see IsLoggedIn component for more info */}
 				{/* <Route
