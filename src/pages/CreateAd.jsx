@@ -1,8 +1,222 @@
-import React from 'react'
+import React, { useState, useNavigate, useEffect } from 'react'
+import NavBar from '../components/NavBar'
+import axios from "axios"
+import FileUploader from '../components/FileUploader'
+import ValidatedAd from './ValidatedAd'
+
+
+
+const API_URL = "https://ride-again.adaptable.app"
 
 function CreateAd() {
+    // const [user, setUser] = useState({ email: "", password: "" })
+    const [user, setUser] = useState({ email: "", password: "" })
+    const [title, setTitle] = useState("")
+    const [type, setType] = useState("")
+    const [description, setDescription] = useState("")
+    const [brand, setBrand] = useState("")
+    const [model, setModel] = useState("")
+    const [usage, setUsage] = useState("")
+    const [price, setPrice] = useState(0)
+    const [status, setStatus] = useState("")
+    const [delivery, setDelivery] = useState("")
+    const [selectedImage, setSelectedImage] = useState(null)
+    const [pickup, setPickup] = useState("")
+    // const user = getUser()
+    // const userAddress = `${userObj.streetName}, ${userObj.postCode} ${userObj.city}`;
+    // const [pickup, setPickup] = useState(userAddress)
+    // Fetch the user's address when they are logged in
+    useEffect(() => {
+        const userJson = localStorage.getItem("user");
+        if (userJson){
+            const userObj = JSON.parse(userJSON);
+            setUser(userObj)
+            const userAddress = `${userObj.streetName}, ${userObj.postCode} ${userObj.city}`;
+            
+            setPickup(userAddress)
+        }
+        
+    }, []);
+// user in the dependancy?
+
+    async function handleSubmit(event){
+        event.preventDefault()
+
+        // input validation
+
+        // if (!title || !brand || !model || !price || !delivery || !selectedImage) {
+        //     alert('Please fill in all required fields.');
+        //     return;
+        // }
+
+        if (!title){
+        alert ("Please enter a title.")
+        }
+        if (!brand){
+            alert ("Please enter a brand.")
+            }
+        if (!model){
+            alert ("Please enter a model.")
+            }
+        if (!price){
+            alert ("Please enter a price.")
+            }
+        if (!delivery){
+            alert ("Please enter a delivery method.")
+            }
+        if (!selectedImage) {
+            alert("Please upload an image.");
+        }
+
+        const adToCreate = {
+            title,
+            status,
+            type,
+            brand,
+            model,
+            description,
+            price,
+            usage,
+            delivery,
+            pickup,
+            selectedImage,
+
+        }
+
+        // setIsLoading(true)
+
+        try {
+            const response = await axios.post(`${API_URL}/ads`, adToCreate)
+            console.log(response.data)
+            // navigate(`/validatead`)
+            // Redirect or perform actions upon success
+            
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
   return (
-    <div>CreateAd</div>
+    <div className = "createAd">
+        <NavBar/>
+        <h3>Create your ad</h3>
+        <form onSubmit={handleSubmit}>
+            <div>
+                <label htmlFor="title">Title of your ad</label>
+                <input 
+                    type="text"
+                    id="title"
+                    value={title}
+                    placeholder='e.g., cheap Giant race mechanical bike'
+                    onChange={(e)=>setTitle(e.target.value)} 
+                    />
+                </div>
+            <div>
+                <label htmlFor="type">Type of bicycle</label>
+                <select value={type} id="type" onChange={(e)=>setType(e.target.value)} >
+                    <option value="Select your bicycle type">Select your bicycle type</option>
+                    <option value="Mechanical">Mechanical bicycle</option>
+                    <option value="Electric Assist">Electric assist bicycle</option>
+                    <option value="Electric">Electric bicycle</option>
+                </select>
+            </div>
+            <div>
+                <label htmlFor="brand">Brand of bicycle</label>
+                <input 
+                    type="text"
+                    id="brand"
+                    value={brand}
+                    placeholder='e.g., Giant'
+                    onChange={(e)=>setBrand(e.target.value)} 
+                     />
+            </div>
+            <div>
+                <label htmlFor="model">Model of bicycle</label>
+                <input 
+                    type="text"
+                    id="model"
+                    value={model}
+                    placeholder='e.g., CrossTrail 600'
+                    onChange={(e)=>setModel(e.target.value)} 
+                    />
+            </div>
+            <div>
+                <label htmlFor="description">Description</label>
+                <textarea
+                    type="text"
+                    id="description"
+                    value={description}
+                    placeholder='e.g., lightweight bike for the city'
+                    onChange={(e)=>setDescription(e.target.value)} 
+                    />
+            </div>
+            <div>
+                <label htmlFor="price">Price (in Euros)</label>
+                <input 
+                    type="number"
+                    id="price"
+                    value={price}
+                    placeholder='e.g., 750'
+                    onChange={(e)=>setPrice(e.target.value)} 
+                 />
+            </div>
+            <div>
+                <label htmlFor="usage">Usage of bicycle</label>
+                <input 
+                    type="text"
+                    id="usage"
+                    value={usage}
+                    placeholder='e.g., Mountain bike'
+                    onChange={(e)=>setUsage(e.target.value)} 
+                    />
+            </div>
+            <div>
+                <label htmlFor="status">Status of the bicycle</label>
+                <select value={status} id="status" onChange={(e)=>setStatus(e.target.value)} >
+                    <option value="Choose the status of your bicycle">Choose the status of your bicycle</option>
+                    <option value="like New">like new</option>
+                    <option value="very Good">very good</option>
+                    <option value="good">very good</option>
+                    <option value="needs Repair">needs repair</option>
+                    <option value="parts">for parts</option>
+                </select>
+            </div>
+            <div>
+                <label htmlFor="delivery">Delivery options</label>
+                <select value={delivery} id="delivery" onChange={(e)=>setDelivery(e.target.value)} >
+                    <option value="Select the delivery option">Select the delivery option</option>
+                    <option value="in person">In person delivery</option>
+                    <option value="postal">Postal delivery</option>
+                </select>
+            </div>
+            <div>
+                <label htmlFor="pickup">Pick up location</label>
+                <input 
+                type="text" 
+                id="pickup"
+                value={pickup}
+                placeholder="e.g., 2, place d'Italie, 75013 Paris"
+                onChange={(e)=>setPickup(e.target.value)}
+                /></div>
+
+            <FileUploader
+            onFileSelectSuccess={(file)=>setSelectedImage(file)}
+            onFileSelectError={({error})=>alert(error)}
+            />
+            {/* <div>
+                <label htmlFor="image">Image of bicycle</label>
+                <input 
+                    type="file"
+                    id="image"
+                    value={selectedImage}
+                    onChange={(e)=>setSelectedImage(e.target.files[0])} 
+                    />
+            </div> */}
+            <button type="submit" >Create ad</button>
+        </form>
+        
+
+    </div>
   )
 }
 

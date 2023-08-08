@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 // import "./navbar.css";
 function NavBar({ removeUser }) {
-    // const user = JSON.parse(localStorage.getItem("user"));
+    const user = JSON.parse(localStorage.getItem("user"));
 
     return (
         <nav className="navbar">
@@ -11,9 +11,9 @@ function NavBar({ removeUser }) {
                 <button>Add an ad</button>
             </div>
             <div className="navbar-links">
-                {/* <NavLink to={"/"}>Home</NavLink> */}
-                {/* <NavLink to={"/stuff"}>Things with arrays and fav's</NavLink> */}
-                {/* {!user && (
+                <NavLink to={"/"}>Home</NavLink>
+                {/* { <NavLink to={"/stuff"}>Things with arrays and fav's</NavLink> */}
+                {!user && (
                     <>
                         <NavLink to={"/signup"}>Signup</NavLink>
                         <NavLink to={"/login"}>Login</NavLink>
@@ -23,7 +23,7 @@ function NavBar({ removeUser }) {
                     <>
                         <button onClick={removeUser}>Logout</button>
                     </>
-                )} */}
+                )}
             </div>
         </nav>
     );
