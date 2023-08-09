@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function OneBike({ randomCategories }) {
     const { id } = useParams();
+
+    const navigate = useNavigate(); // Utilisation du hook useNavigate
 
     const [bike, setBike] = useState(null);
 
@@ -41,6 +44,9 @@ function OneBike({ randomCategories }) {
 
     const handleBuyClick = () => {
         // Logique pour acheter le vélo
+
+        // Utilisez navigate pour rediriger vers la page OrderDetails après l'achat
+        navigate(`/orderDetails/${id}`);
     };
 
     // const handleChanceOne = () => {
