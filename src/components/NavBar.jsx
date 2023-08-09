@@ -14,8 +14,12 @@ function NavBar({ removeUser }) {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <img src="/src/assets/minions-sleepy-help-me-kg8b2gdcdn4pmlpd.gif" alt="Logo" />
-                <button>Add an ad</button>
+                <div>
+                    <img src="/public/rideAgainLOGO.png" alt="Logo" />
+                </div>
+                <div className="btn-block">
+                    <button className="btn-orange">Add an ad</button>
+                </div>
             </div>
             <div className="navbar-links">
                 <NavLink to={"/"}>Home</NavLink>

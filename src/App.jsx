@@ -13,7 +13,7 @@ import ValidatedAd from "./pages/ValidatedAd";
 // import IsLoggedIn from "./components/IsLoggedIn";
 import OneBike from "./pages/OneBike";
 import OrderDetails from "./pages/OrderDetails";
-import Search from "./components/Search";
+// import Search from "./components/Search";
 import SeeMyAds from "./pages/SeeMyAds";
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
         <>
             {/* <HomePage/> */}
             <NavBar removeUser={removeUser} />
-            <Search searchString={searchString} handleSearch={setSearchString} />
+            {/* <Search searchString={searchString} handleSearch={setSearchString} /> */}
 
             {user && (
                 <h1>
@@ -59,8 +59,10 @@ function App() {
                 <Route path="/validated-ad/:id" element={<ValidatedAd />} />
                 {/* <Route path="/seemyads" element={<SeeMyAds />} /> */}
                 <Route path="/ads/:adId" element={<SeeMyAds />} />
-                <Route path="/bike/:id" element={<OneBike />} /> {/* Ajoutez cette ligne pour la page de description */}
+                <Route path="/bike/:id" element={<OneBike user={user} />} />{" "}
+                {/* Ajoutez cette ligne pour la page de description */}
                 <Route path="/orderdetails/:id" element={<OrderDetails />} />
+                <Route path="/bike/:id" element={<OneBike user={user} />} />
                 {/* Added a Route protection, see IsLoggedIn component for more info */}
                 {/* <Route
 					path="/favorites"

@@ -1,0 +1,49 @@
+.random-categories {
+    width: 100%;
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+}
+
+.image-homePage-categories {
+    width: 350px;
+    height: 300px;
+}
+
+.info-categories-bike {
+    width: 100%;
+}
+
+.image-categories-random {
+    width: 25%;
+}
+
+.homePage {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories-block {
+    width: 55%;
+    display: flex;
+    gap: 35px;
+    padding: 20px;
+    /* border: 5px solid black; */
+    justify-content: space-evenly;
+}
+
+section {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+p,
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 20px;
+}
