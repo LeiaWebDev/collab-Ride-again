@@ -13,10 +13,13 @@ import ValidatedAd from "./pages/ValidatedAd";
 // import IsLoggedIn from "./components/IsLoggedIn";
 import OneBike from "./pages/OneBike";
 import OrderDetails from "./pages/OrderDetails";
+import Search from "./components/Search";
 import SeeMyAds from "./pages/SeeMyAds";
 
 function App() {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
+    const [ads, setAds] = useState([]);
+    const [searchString, setSearchString] = useState("");
 
     function storeUser(userArg) {
         setUser(userArg);
@@ -28,10 +31,20 @@ function App() {
         localStorage.removeItem("user");
     }
 
+    // for search bar
+    console.log(searchString);
+    let adsToDisplay;
+    if (!searchString) {
+        adsToDisplay = ads;
+    } else {
+        adsToDisplay = ads.filter((ad) => ad.title.toLowerCase().includes(searchString.toLowerCase()));
+    }
+
     return (
         <>
             {/* <HomePage/> */}
             <NavBar removeUser={removeUser} />
+            <Search searchString={searchString} handleSearch={setSearchString} />
 
             {user && (
                 <h1>
