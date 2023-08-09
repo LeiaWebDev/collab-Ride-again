@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./../styles/navbar.css";
+import Search from "./Search";
 
 function NavBar({ removeUser }) {
     const user = JSON.parse(localStorage.getItem("user"));
@@ -18,9 +19,8 @@ function NavBar({ removeUser }) {
                 <button>Add an ad</button>
             </div>
             <div className="navbar-links">
-                <NavLink to={"/"}>Home</NavLink>
-                {/* <NavLink to={"/stuff"}>Things with arrays and fav's</NavLink> */}
-
+                <NavLink to={"/"}>Home</NavLink>               
+                {/* <Search onSearch={handleSearch}/> */}
                 {!isLogged ? (
                     <>
                         <NavLink to={"/signup"}>Sign Up</NavLink>
@@ -30,6 +30,7 @@ function NavBar({ removeUser }) {
                     <button onClick={handleLogout}>Log out</button>
                 )}
             </div>
+            <Search/>
         </nav>
     );
 }

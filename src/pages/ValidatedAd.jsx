@@ -12,7 +12,7 @@ function ValidatedAd() {
         <h3>Congratulations, you created your ad</h3>
 
        
-        <Link to={`/ads/${id}`}>
+        <Link to={`/ads/my-ads`}>
             <button>See my ads</button>
         </Link>
         <Link to="/createad">

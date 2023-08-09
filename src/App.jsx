@@ -13,13 +13,15 @@ import ValidatedAd from "./pages/ValidatedAd";
 // import IsLoggedIn from "./components/IsLoggedIn";
 import OneBike from "./pages/OneBike";
 import OrderDetails from "./pages/OrderDetails";
-import Search from "./components/Search";
 import SeeMyAds from "./pages/SeeMyAds";
+import SearchResult from "./pages/searchResult";
+import Search from "./components/Search";
+
 
 function App() {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
-    const [ads, setAds] = useState([]);
-    const [searchString, setSearchString] = useState("");
+    // const [ads, setAds] = useState([]);
+    // const [searchString, setSearchString] = useState("");
 
     function storeUser(userArg) {
         setUser(userArg);
@@ -32,19 +34,19 @@ function App() {
     }
 
     // for search bar
-    console.log(searchString);
-    let adsToDisplay;
-    if (!searchString) {
-        adsToDisplay = ads;
-    } else {
-        adsToDisplay = ads.filter((ad) => ad.title.toLowerCase().includes(searchString.toLowerCase()));
-    }
+    // console.log(searchString);
+    // let adsToDisplay;
+    // if (!searchString) {
+    //     adsToDisplay = ads;
+    // } else {
+    //     adsToDisplay = ads.filter((ad) => ad.title.toLowerCase().includes(searchString.toLowerCase()));
+    // }
 
     return (
         <>
-            {/* <HomePage/> */}
             <NavBar removeUser={removeUser} />
-            <Search searchString={searchString} handleSearch={setSearchString} />
+            {/* <Search searchString={searchString} handleSearch={setSearchString} /> */}
+            {/* <SearchResult ads={ads} /> */}
 
             {user && (
                 <h1>
@@ -58,18 +60,14 @@ function App() {
                 <Route path="/createad" element={<CreateAd user={user} />} />
                 <Route path="/validated-ad/:id" element={<ValidatedAd />} />
                 {/* <Route path="/seemyads" element={<SeeMyAds />} /> */}
-                <Route path="/ads/:adId" element={<SeeMyAds />} />
-                <Route path="/bike/:id" element={<OneBike />} /> {/* Ajoutez cette ligne pour la page de description */}
+                <Route path="/ads/my-ads" element={<SeeMyAds user={user} />} />
+                <Route path="/bike/:id" element={<OneBike />} /> 
+                {/* <Route path="/ad/:id" element={<OneBike />} /> */}
                 <Route path="/orderdetails/:id" element={<OrderDetails />} />
-                {/* Added a Route protection, see IsLoggedIn component for more info */}
-                {/* <Route
-					path="/favorites"
-					element={
-						<IsLoggedIn user={user}>
-							<Favoriting user={user} />
-						</IsLoggedIn>
-					}
-				/> */}
+                {/* <Route path="/edit-ad/:id" element={<EditAd />} /> */}
+                <Route path="/search-result" element={<SearchResult />} />
+                {/* <Route path="/favorites" element={<IsLoggedIn user={user}><Favoriting user={user} />
+						    </IsLoggedIn>}/> */}
             </Routes>
         </>
     );

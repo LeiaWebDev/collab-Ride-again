@@ -123,6 +123,8 @@ function CreateAd({user}) {
             pickup,
             image: selectedImage,
 
+            userId: user.id
+
         }
 
         // setIsLoading(true)
@@ -131,7 +133,7 @@ function CreateAd({user}) {
             const response = await axios.post(`${API_URL}`, adToCreate)
             const createdAd = response.data
             console.log(response.data)
-            navigate(`/validated-ad/${createdAd.id}`)
+            navigate(`/validated-ad`)
             // Redirect or perform actions upon success
 
         } catch (error) {
