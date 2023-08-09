@@ -1,16 +1,16 @@
-import React, { useState, useNavigate, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import axios from "axios"
 import FileUploader from '../components/FileUploader'
 import ValidatedAd from './ValidatedAd'
+import { useNavigate, useLocation } from 'react-router-dom'
+import SeeMyAds from './SeeMyAds'
 
 
+const API_URL = "https://ride-again.adaptable.app/ads"
 
-const API_URL = "https://ride-again.adaptable.app"
-
-function CreateAd() {
+function CreateAd({user}) {
     // const [user, setUser] = useState({ email: "", password: "" })
-    const [user, setUser] = useState({ email: "", password: "" })
     const [title, setTitle] = useState("")
     const [type, setType] = useState("")
     const [description, setDescription] = useState("")
@@ -20,24 +20,66 @@ function CreateAd() {
     const [price, setPrice] = useState(0)
     const [status, setStatus] = useState("")
     const [delivery, setDelivery] = useState("")
-    const [selectedImage, setSelectedImage] = useState(null)
-    const [pickup, setPickup] = useState("")
-    // const user = getUser()
+    const [selectedImage, setSelectedImage] = useState("")
+    const [pickup, setPickup] = useState(`${user.streetName}, ${user.postCode} ${user.city}`)
+    const navigate = useNavigate()
+    const location = useLocation()
+    const searchParams= new URLSearchParams(location.search)
+    const editAdId = searchParams.get('editAdId')
+    const isEdit = searchParams.get("edit") === true
+
+    
     // const userAddress = `${userObj.streetName}, ${userObj.postCode} ${userObj.city}`;
     // const [pickup, setPickup] = useState(userAddress)
     // Fetch the user's address when they are logged in
+    
+
+
     useEffect(() => {
-        const userJson = localStorage.getItem("user");
-        if (userJson){
-            const userObj = JSON.parse(userJSON);
-            setUser(userObj)
-            const userAddress = `${userObj.streetName}, ${userObj.postCode} ${userObj.city}`;
-            
-            setPickup(userAddress)
+        // const userJson = localStorage.getItem("user");
+        // if (userJson){
+        //     const userObj = JSON.parse(userJson);
+        //     setUser(user)
+        //     setPickup(userAddress)
+        // }
+        if (isEdit && editAdId){
+            fetchAdForEditing(editAdId)
         }
         
-    }, []);
-// user in the dependancy?
+    }, [editAdId]);
+
+    async function fetchAdForEditing(){
+        try {
+            const response = await axios.get(`${API_URL}/${editAdId}`)
+            const adData = response.data
+            setTitle(adData.title)
+            setSelectedImage(adData.image)
+            setType(adData.type)
+            setBrand(adData.brand)
+            setModel(adData.model)
+            setUsage(adData.usage)
+            setDescription(adData.description)
+            setPrice(adData.price)
+            setStatus(adData.status)
+            setDelivery(adData.delivery)
+            setPickup(adData.pickup)
+            
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+
+    // const handleFileSelect=(file) =>{
+    //     console.log("Selected file:", file)
+    // }
+    // const handleFileSelectSuccess = (file) =>{
+    //     console.log("File selection success:", file)
+    // }
+    // const handleFileSelectError=(file) =>{
+    //     console.log("File selection error:", error)
+    // }
 
     async function handleSubmit(event){
         event.preventDefault()
@@ -50,22 +92,22 @@ function CreateAd() {
         // }
 
         if (!title){
-        alert ("Please enter a title.")
+            return alert ("Please enter a title.")
         }
         if (!brand){
-            alert ("Please enter a brand.")
+            return alert ("Please enter a brand.")
             }
         if (!model){
-            alert ("Please enter a model.")
+            return alert ("Please enter a model.")
             }
         if (!price){
-            alert ("Please enter a price.")
+            return alert ("Please enter a price.")
             }
         if (!delivery){
-            alert ("Please enter a delivery method.")
+            return alert ("Please enter a delivery method.")
             }
         if (!selectedImage) {
-            alert("Please upload an image.");
+            return alert("Please upload an image.");
         }
 
         const adToCreate = {
@@ -79,18 +121,18 @@ function CreateAd() {
             usage,
             delivery,
             pickup,
-            selectedImage,
+            image: selectedImage,
 
         }
 
         // setIsLoading(true)
 
         try {
-            const response = await axios.post(`${API_URL}/ads`, adToCreate)
+            const response = await axios.post(`${API_URL}`, adToCreate)
+            const createdAd = response.data
             console.log(response.data)
-            // navigate(`/validatead`)
+            navigate(`/validated-ad/${createdAd.id}`)
             // Redirect or perform actions upon success
-            
 
         } catch (error) {
             console.log(error)
@@ -176,7 +218,7 @@ function CreateAd() {
                     <option value="Choose the status of your bicycle">Choose the status of your bicycle</option>
                     <option value="like New">like new</option>
                     <option value="very Good">very good</option>
-                    <option value="good">very good</option>
+                    <option value="good">good</option>
                     <option value="needs Repair">needs repair</option>
                     <option value="parts">for parts</option>
                 </select>
@@ -192,26 +234,33 @@ function CreateAd() {
             <div>
                 <label htmlFor="pickup">Pick up location</label>
                 <input 
-                type="text" 
-                id="pickup"
-                value={pickup}
-                placeholder="e.g., 2, place d'Italie, 75013 Paris"
-                onChange={(e)=>setPickup(e.target.value)}
-                /></div>
+                    type="text" 
+                    id="pickup"
+                    value={pickup}
+                    placeholder="e.g., 2, place d'Italie, 75013 Paris"
+                    onChange={(e)=>setPickup(e.target.value)}
+                />
+            </div>
 
-            <FileUploader
-            onFileSelectSuccess={(file)=>setSelectedImage(file)}
-            onFileSelectError={({error})=>alert(error)}
-            />
-            {/* <div>
+            {/* <FileUploader
+            // onFileSelectSuccess={(file)=>setSelectedImage(file)}
+            // onFileSelectError={({error})=>alert(error)}
+
+            onFileSelect={handleFileSelect}
+            onFileSelectSuccess={handleFileSelectSuccess}
+            onFileSelectError={handleFileSelectError}
+            /> */}
+            <div>
                 <label htmlFor="image">Image of bicycle</label>
                 <input 
-                    type="file"
+                    type="text"
                     id="image"
                     value={selectedImage}
-                    onChange={(e)=>setSelectedImage(e.target.files[0])} 
+                    placeholder='e.g., https://pngimg.com/uploads/bicycle/bicycle_PNG5353.png'
+                    onChange={(e)=>setSelectedImage(e.target.value)} 
+                    // onChange={(e)=>setSelectedImage(e.target.files[0])} 
                     />
-            </div> */}
+            </div>
             <button type="submit" >Create ad</button>
         </form>
         

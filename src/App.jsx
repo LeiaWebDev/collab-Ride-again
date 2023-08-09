@@ -10,9 +10,10 @@ import { Routes, Route } from "react-router-dom";
 import CreateAd from "./pages/CreateAd";
 import ValidatedAd from "./pages/ValidatedAd";
 // import Favoriting from "./pages/Favoriting"
-import IsLoggedIn from "./components/IsLoggedIn";
+// import IsLoggedIn from "./components/IsLoggedIn";
 import OneBike from "./pages/OneBike";
 import OrderDetails from "./pages/OrderDetails";
+import SeeMyAds from "./pages/SeeMyAds";
 
 function App() {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
@@ -41,12 +42,12 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/login" element={<LoginPage storeUser={storeUser} />} />
                 <Route path="/signup" element={<SignupPage />} />
-                <Route path="/createad" element={<CreateAd />} />
-                <Route path="/validatedad" element={<ValidatedAd />} />
-                <Route path="/bike/:id" element={<OneBike />} />
-                {/* creer la route pour order details */}
+                <Route path="/createad" element={<CreateAd user={user} />} />
+                <Route path="/validated-ad/:id" element={<ValidatedAd />} />
+                {/* <Route path="/seemyads" element={<SeeMyAds />} /> */}
+                <Route path="/ads/:adId" element={<SeeMyAds />} />
+                <Route path="/bike/:id" element={<OneBike />} /> {/* Ajoutez cette ligne pour la page de description */}
                 <Route path="/orderdetails/:id" element={<OrderDetails />} />
-
                 {/* Added a Route protection, see IsLoggedIn component for more info */}
                 {/* <Route
 					path="/favorites"
