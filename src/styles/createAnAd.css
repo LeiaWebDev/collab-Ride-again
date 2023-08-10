@@ -1,0 +1,73 @@
+.block-area-label-input-form {
+    display: flex;
+    justify-content: inherit;
+    line-height: 1.2;
+    width: 50%;
+    height: 30px;
+    margin-bottom: 2%;
+}
+
+.form-createAd {
+    background: radial-gradient(circle, #bf7467, #fcfad4);
+}
+
+.block-area-label-input-form input::placeholder,
+.block-area-label-input-form select::placeholder,
+.block-area-label-input-form textarea::placeholder {
+    padding-left: 10px;
+}
+
+.form-createAd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-create-ad {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.input-createAd {
+    border-radius: 0;
+}
+
+input,
+textarea {
+    width: 50%;
+    border: 1px solid black;
+}
+
+select {
+    width: 51%;
+}
+
+label {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    color: white;
+}
+
+.block-area-label-input-form input,
+.block-area-label-input-form select,
+.block-area-label-input-form textarea {
+    padding: 0 0 0 8px;
+}
+
+.btn-form-create {
+    background-color: #e58f24;
+    width: 180px;
+    height: 40px;
+    border-radius: 25px;
+    font-family: cinzel;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+}

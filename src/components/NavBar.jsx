@@ -40,9 +40,10 @@ function NavBar({ removeUser, user }) {
                     </>
                 ) : (
                     <>
-                        <button className="button-logOut-Navbar" onClick={handleLogout}>
-                            Log out
-                        </button>
+                        <NavLink to={"/signup"} onClick={handleLogout}>
+                            <img className="login-icon" src="/logout.png" alt="Sign Up" />
+                        </NavLink>
+
                         {/* <span> BONJOUR {user.firstName}</span> */}
                     </>
                 )}
