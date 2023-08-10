@@ -36,32 +36,20 @@ function Search() {
     //     setResult(suggestions.find((suggestion)=> suggestion.title === title))
     // }
 
-  return (
-    <>
+    return (
+        <>
 
-
-    <div>
-        <label htmlFor="">Search</label>
-        <input 
-            name="search"
-            type='text'
-            placeholder='Search for bikes...'
-            value={value}
-            onChange={(event)=>{
-                setValue(event.target.value)
-            }}
-            >
-        </input>
-        <button onClick={findResult(string.title)}>Search</button>
-    </div>
-    <div>
+        {/* <div>
         {searchStrings.map((string)=>(
             <div>{string["title"]}</div>
-        ))}
-    </div>
- <form onSubmit={handleSearch}> 
+        ))} */}
+    
+        <form onSubmit={handleSearch}> 
             <label htmlFor="">Search</label>
             <input 
+            // value={value}
+            // onChange={(event)=>{
+            // setValue(event.target.value)
                 name="search"
                 type='text'
                 placeholder='Search for bikes...'
@@ -69,20 +57,19 @@ function Search() {
                 onChange={(e)=>{
                     setSearchText(e.target.value)
                 }}
-                
                 >
             </input>
-           
             <button >Search</button>
-
             {/* <button onClick={findResult(string.title)}>Search</button> */}
         </form>
            
         {/* <SearchResult searchResults={searchResults}/> */}
-    </div>
+    
         {/* {result && <SearchResult {...result}/>} */}
     
     </>
     
-  )
+    )
 }
+
+export default Search
