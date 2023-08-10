@@ -34,7 +34,7 @@ function LoginPage({ storeUser }) {
     return (
         <div>
             <h2 className="card-title">Login</h2>
-            <form onSubmit={handleSubmit}>
+            <form className="form-Login" onSubmit={handleSubmit}>
                 {/* <div>
 					<label htmlFor="username">Username: </label>
 					<input
@@ -46,26 +46,32 @@ function LoginPage({ storeUser }) {
 						}
 					/>
 				</div> */}
-                <div className="email-area">
-                    <label htmlFor="email">E-Mail Address: </label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={user.email}
-                        onChange={(e) => setUser({ ...user, [e.target.id]: e.target.value })}
-                    />
-                </div>
-                <div className="password-area">
-                    <label htmlFor="password">Password: </label>
-                    <input
-                        type="password"
-                        id="password"
-                        value={user.password}
-                        onChange={(e) => setUser({ ...user, [e.target.id]: e.target.value })}
-                    />
+                <div className="area-block">
+                    <div className="email-area">
+                        <label className="label-login-form" htmlFor="email">
+                            E-Mail Address:{" "}
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            value={user.email}
+                            onChange={(e) => setUser({ ...user, [e.target.id]: e.target.value })}
+                        />
+                    </div>
+                    <div className="password-area">
+                        <label className="label-login-form" htmlFor="password">
+                            Password:{" "}
+                        </label>
+                        <input
+                            type="password"
+                            id="password"
+                            value={user.password}
+                            onChange={(e) => setUser({ ...user, [e.target.id]: e.target.value })}
+                        />
+                    </div>
                 </div>
                 <p className="error">{error}</p>
-                <button>Login</button>
+                <button className="btn-orange">Login</button>
             </form>
         </div>
     );
