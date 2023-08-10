@@ -1,39 +1,41 @@
-import React from "react"
-import { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
-import axios from "axios"
+import React from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import "./../styles/Login.css";
+
 function LoginPage({ storeUser }) {
-	const [user, setUser] = useState({ email: "", password: "" })
-	const [error, setError] = useState("")
-	const navigate = useNavigate()
+    const [user, setUser] = useState({ email: "", password: "" });
+    const [error, setError] = useState("");
+    const navigate = useNavigate();
 
-	async function handleSubmit(e) {
-		e.preventDefault()
-		try {
-			const response = await axios.get(
-				`https://ride-again.adaptable.app/users?email=${user.email}&password=${user.password}`
-			)
-			if (!response.data.length) {
-				throw new Error("Could not find the user")
-			}
-			const foundUser = response.data[0]
-			console.log(foundUser)
-			delete foundUser.password
-			storeUser(foundUser)
-			navigate("/")
-		} catch (error) {
-			setError(error.message)
-			setTimeout(() => {
-				setError("")
-			}, 4000)
-		}
-	}
+    async function handleSubmit(e) {
+        e.preventDefault();
+        try {
+            const response = await axios.get(
+                `https://ride-again.adaptable.app/users?email=${user.email}&password=${user.password}`
+            );
+            if (!response.data.length) {
+                throw new Error("Could not find the user");
+            }
+            const foundUser = response.data[0];
+            console.log(foundUser);
+            delete foundUser.password;
+            storeUser(foundUser);
+            navigate("/");
+        } catch (error) {
+            setError(error.message);
+            setTimeout(() => {
+                setError("");
+            }, 4000);
+        }
+    }
 
-	return (
-		<div>
-			<h2>Login</h2>
-			<form onSubmit={handleSubmit}>
-				{/* <div>
+    return (
+        <div>
+            <h2 className="card-title">Login</h2>
+            <form onSubmit={handleSubmit}>
+                {/* <div>
 					<label htmlFor="username">Username: </label>
 					<input
 						type="text"
@@ -44,33 +46,29 @@ function LoginPage({ storeUser }) {
 						}
 					/>
 				</div> */}
-				<div>
-					<label htmlFor="email">E-mail: </label>
-					<input
-						type="email"
-						id="email"
-						value={user.email}
-						onChange={(e) =>
-							setUser({ ...user, [e.target.id]: e.target.value })
-						}
-					/>
-				</div>
-				<div>
-					<label htmlFor="password">Password: </label>
-					<input
-						type="password"
-						id="password"
-						value={user.password}
-						onChange={(e) =>
-							setUser({ ...user, [e.target.id]: e.target.value })
-						}
-					/>
-				</div>
-				<p className="error">{error}</p>
-				<button>Login</button>
-			</form>
-		</div>
-	)
+                <div className="email-area">
+                    <label htmlFor="email">E-Mail Address: </label>
+                    <input
+                        type="email"
+                        id="email"
+                        value={user.email}
+                        onChange={(e) => setUser({ ...user, [e.target.id]: e.target.value })}
+                    />
+                </div>
+                <div className="password-area">
+                    <label htmlFor="password">Password: </label>
+                    <input
+                        type="password"
+                        id="password"
+                        value={user.password}
+                        onChange={(e) => setUser({ ...user, [e.target.id]: e.target.value })}
+                    />
+                </div>
+                <p className="error">{error}</p>
+                <button>Login</button>
+            </form>
+        </div>
+    );
 }
 
-export default LoginPage
+export default LoginPage;

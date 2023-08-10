@@ -1,85 +1,8 @@
-// import React, { useState, useEffect } from "react";
-// import axios from "axios";
-
-// function HomePage() {
-//     // on line 7, we are using the useState hook to create a state variable called randomCategories
-//     const [randomCategories, setRandomCategories] = useState({
-//         mechanical: [],
-//         electric: [],
-//         electricAssist: [],
-//     });
-
-//     let responseCopy = [...response.data];
-
-//     for (let i = 0; i < 3; i++) {
-//         const randomId = Math.random() * responseCopy.length;
-//         const chosenItem = responseCopy.splice(randomId, 1);
-//         randomCategories.push(chosenItem);
-//     }
-
-//     useEffect(() => {
-//         axios
-
-//             .get("https://ride-again.adaptable.app/ads?type=Electric Assist")
-//             .then((response) => {
-//                 const shuffled = response.data.sort(() => 0.5 - Math.random());
-//                 console.log(response.data);
-
-//                 const selected = shuffled.slice(0, 3);
-//                 setRandomCategories({ ...randomCategories, electricAssist: selected });
-//             })
-//             .catch((error) => {
-//                 console.log("Error fetching data:", error);
-//             });
-//     }, []);
-
-//     useEffect(() => {
-//         axios
-
-//             .get("https://ride-again.adaptable.app/ads?type=Mechanical")
-//             .then((response) => {
-//                 const shuffled = response.data.sort(() => 0.5 - Math.random());
-//                 console.log(response.data);
-//                 const selected = shuffled.slice(0, 3);
-//                 setRandomCategories({ ...randomCategories, electricAssist: selected });
-//             })
-//             .catch((error) => {
-//                 console.log("Error fetching data:", error);
-//             });
-//     }, []);
-
-//     useEffect(() => {
-//         console.log("Updated randomCategories:", randomCategories);
-//     }, [randomCategories]);
-
-//     if (!randomCategories) {
-//         return <div className="loading">flute flute flute</div>;
-//     }
-
-//     return (
-//         <div className="homePage">
-//             <h1>Hundreds of classified ads ELECTRICS</h1>
-
-//             <div className="random-categories">
-//                 {randomCategories.electricAssist.map((category) => (
-//                     <section key={category.id}>
-//                         <h2>{category.id}</h2>
-
-//                         <img src={category.image} alt={category.type} />
-//                     </section>
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default HomePage;
-
-// 1 we import moduls
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import "./../styles/homePage.css";
+import "./../styles/footer.css";
 
 function HomePage() {
     // 2 on line 86, we are using useState hook to create a state variable called randomCategories
@@ -133,46 +56,73 @@ function HomePage() {
 
     return (
         <div className="homePage">
+            <h1>Mechanical bikes</h1>
             <div className="random-categories">
-                <h1>Hundreds of classified ads MECHANICAL</h1>
-                {randomCategories.mechanical.map((category) => (
-                    <section key={category.id}>
-                        <h2>{category.model}</h2>
-                        <h2>{category.description}</h2>
-                        <p>Type: {category.type}</p>
-                        <p>Price: {category.price}</p>
-                        <Link to={`/bike/${category.id}`}>
-                            <img src={category.image} alt={category.type} />
-                        </Link>
-                        {/* <img src={category.image} alt={category.type} /> */}
-                    </section>
-                ))}
+                <div className="categories-block">
+                    {randomCategories.mechanical.map((category) => (
+                        <section key={category.id}>
+                            <h2>{category.model}</h2>
+                            <Link to={`/bike/${category.id}`}>
+                                <img className="image-homePage-categories" src={category.image} alt={category.type} />
+                            </Link>
+                            {/* <h2>{category.description}</h2> */}
+                            <p>{category.brand}</p>
+                            <p>{category.price} €</p>
+                            <p>Condition : {category.status}</p>
+
+                            {/* <img src={category.image} alt={category.type} /> */}
+                        </section>
+                    ))}
+                </div>
             </div>
 
+            <h1>Electric bikes</h1>
             <div className="random-categories">
-                <h1>Hundreds of classified ads ELECTRIC</h1>
-                {randomCategories.electric.map((category) => (
-                    <section key={category.id}>
-                        <h2>{category.model}</h2>
-                        <h2>{category.description}</h2>
-                        <p>Type: {category.type}</p>
-                        <p>Price: {category.price}</p>
-                        <img src={category.image} alt={category.type} />
-                    </section>
-                ))}
+                <div className="categories-block">
+                    {randomCategories.electric.map((category) => (
+                        <section key={category.id}>
+                            <div className="categories-title">
+                                <h2>{category.model}</h2>
+                                <div className="info-categories-bike">
+                                    <div className="image-categories-random"></div>
+                                    <Link to={`/bike/${category.id}`}>
+                                        <img
+                                            className="image-homePage-categories"
+                                            src={category.image}
+                                            alt={category.type}
+                                        />
+                                    </Link>
+                                    {/* <h2>{category.description}</h2> */}
+                                    <p>{category.brand}</p>
+                                    <p>{category.price} €</p>
+                                    <p>Condition : {category.status}</p>
+
+                                    {/* <img src={category.image} alt={category.type} /> */}
+                                </div>
+                            </div>
+                        </section>
+                    ))}
+                </div>
             </div>
 
+            <h1>Electric Assist bikes</h1>
             <div className="random-categories">
-                <h1>Hundreds of classified ads ELECTRIC ASSIST</h1>
-                {randomCategories.electricAssist.map((category) => (
-                    <section key={category.id}>
-                        <h2>{category.model}</h2>
-                        <h2>{category.description}</h2>
-                        <p>Type: {category.type}</p>
-                        <p>Price: {category.price}</p>
-                        <img src={category.image} alt={category.type} />
-                    </section>
-                ))}
+                <div className="categories-block">
+                    {randomCategories.electricAssist.map((category) => (
+                        <section key={category.id}>
+                            <h2>{category.model}</h2>
+                            <Link to={`/bike/${category.id}`}>
+                                <img className="image-homePage-categories" src={category.image} alt={category.type} />
+                            </Link>
+                            {/* <h2>{category.description}</h2> */}
+                            <p>{category.brand}</p>
+                            <p>{category.price} €</p>
+                            <p>Condition : {category.status}</p>
+
+                            {/* <img src={category.image} alt={category.type} /> */}
+                        </section>
+                    ))}
+                </div>
             </div>
             <button>Add an ad</button>
         </div>

@@ -4,7 +4,7 @@ import axios from 'axios'
 import SearchResult from '../pages/searchResult'
 import { useNavigate } from 'react-router-dom'
 
-const API_URL = "https://ride-again.adaptable.app/ads"
+// const API_URL = "https://ride-again.adaptable.app/ads"
 
 function Search() {
     // const [searchStrings, setSearchStrings] = useState("")
@@ -38,8 +38,28 @@ function Search() {
 
   return (
     <>
+
+
     <div>
-        <form onSubmit={handleSearch}> 
+        <label htmlFor="">Search</label>
+        <input 
+            name="search"
+            type='text'
+            placeholder='Search for bikes...'
+            value={value}
+            onChange={(event)=>{
+                setValue(event.target.value)
+            }}
+            >
+        </input>
+        <button onClick={findResult(string.title)}>Search</button>
+    </div>
+    <div>
+        {searchStrings.map((string)=>(
+            <div>{string["title"]}</div>
+        ))}
+    </div>
+ <form onSubmit={handleSearch}> 
             <label htmlFor="">Search</label>
             <input 
                 name="search"
@@ -61,9 +81,8 @@ function Search() {
         {/* <SearchResult searchResults={searchResults}/> */}
     </div>
         {/* {result && <SearchResult {...result}/>} */}
+    
     </>
     
   )
 }
-
-export default Search

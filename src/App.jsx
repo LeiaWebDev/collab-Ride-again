@@ -64,6 +64,7 @@ function App() {
                 <Route path="/bike/:id" element={<OneBike />} /> 
                 {/* <Route path="/ad/:id" element={<OneBike />} /> */}
                 <Route path="/orderdetails/:id" element={<OrderDetails />} />
+                <Route path="/bike/:id" element={<OneBike user={user} />} />
                 {/* <Route path="/edit-ad/:id" element={<EditAd />} /> */}
                 <Route path="/search-result" element={<SearchResult />} />
                 {/* <Route path="/favorites" element={<IsLoggedIn user={user}><Favoriting user={user} />
