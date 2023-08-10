@@ -16,7 +16,7 @@ function NavBar({ removeUser, user }) {
         <nav className="navbar">
             <div className="navbar-logo">
                 <div>
-                    <img src="/public/Logo-Ride-Again-square.png" alt="Logo" />
+                    <img src="/Logo-Ride-Again-square.png" alt="Logo" />
                 </div>
                 <NavLink className="btn-orange" to="/createad">
                     Create an ad
@@ -25,17 +25,17 @@ function NavBar({ removeUser, user }) {
             <Search />
             <div className="navbar-links">
                 <NavLink to={"/"}>
-                    <img className="login-icon" src="../../public/home.png" alt="home" />
+                    <img className="login-icon" src="/home.png" alt="home" />
                 </NavLink>
                 {/* <Search onSearch={handleSearch}/> */}
                 {!user ? (
-                // {!isLogged ? (
+                    // {!isLogged ? (
                     <>
                         <NavLink to={"/signup"}>
-                            <img className="login-icon" src="../../public/account.png" alt="Sign Up" />
+                            <img className="login-icon" src="/signin-icon.png" alt="Sign Up" />
                         </NavLink>
                         <NavLink to={"/login"}>
-                            <img className="login-icon" src="../../public/signin-icon.png" alt="Sign in" />
+                            <img className="login-icon" src="/account.png" alt="Sign in" />
                         </NavLink>
                     </>
                 ) : (

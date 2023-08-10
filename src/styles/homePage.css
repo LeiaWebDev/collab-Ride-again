@@ -5,6 +5,7 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 50px;
+    height: 600px;
 }
 
 .image-homePage-categories {
@@ -14,6 +15,11 @@
 
 .info-categories-bike {
     width: 100%;
+}
+
+.block-area-title-homePage {
+    width: 70%;
+    display: flex;
 }
 
 .image-categories-random {
@@ -36,7 +42,8 @@
 }
 
 .categories-block {
-    width: 55%;
+    width: 70%;
+    height: 550px;
     display: flex;
     gap: 35px;
     padding: 20px;
