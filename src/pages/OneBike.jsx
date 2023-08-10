@@ -5,7 +5,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 // import { Map } from "leaflet";
-import "./../styles/OneBike.css";
+import "../styles/oneBike.css"
 import "leaflet/dist/leaflet.css";
 
 function OneBike({ user }) {
@@ -79,7 +79,7 @@ function OneBike({ user }) {
                 <div className="map-ride-again">
                     <MapContainer
                         center={position}
-                        style={{ width: "650px", height: "650px" }}
+                        style={{ width: "750px", height: "650px" }}
                         zoom={13}
                         scrollWheelZoom={false}
                     >
