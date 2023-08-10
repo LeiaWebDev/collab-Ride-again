@@ -15,8 +15,7 @@ import OneBike from "./pages/OneBike";
 import OrderDetails from "./pages/OrderDetails";
 import SeeMyAds from "./pages/SeeMyAds";
 import SearchResult from "./pages/searchResult";
-import Search from "./components/Search";
-
+// import Search from "./components/Search";
 
 function App() {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
@@ -44,16 +43,15 @@ function App() {
 
     return (
         <>
-            <NavBar removeUser={removeUser} user={user}/>
-            {/* user={loggedUser} */}
+            <NavBar removeUser={removeUser} user={user} />
             {/* <Search searchString={searchString} handleSearch={setSearchString} /> */}
             {/* <SearchResult ads={ads} /> */}
-
             {user && (
                 <h2 className="welcome">
                     Welcome {user.firstName} {user.lastName}!
                 </h2>
             )}
+
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/login" element={<LoginPage storeUser={storeUser} />} />
@@ -62,7 +60,7 @@ function App() {
                 <Route path="/validated-ad/" element={<ValidatedAd />} />
                 {/* <Route path="/seemyads" element={<SeeMyAds />} /> */}
                 <Route path="/ads/my-ads" element={<SeeMyAds user={user} />} />
-                <Route path="/bike/:id" element={<OneBike />} /> 
+                <Route path="/bike/:id" element={<OneBike />} />
                 {/* <Route path="/ad/:id" element={<OneBike />} /> */}
                 <Route path="/orderdetails/:id" element={<OrderDetails />} />
                 {/* <Route path="/edit-ad/:id" element={<EditAd />} /> */}

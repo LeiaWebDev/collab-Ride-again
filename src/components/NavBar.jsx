@@ -5,7 +5,7 @@ import Search from "./Search";
 
 function NavBar({ removeUser, user }) {
     // const user = JSON.parse(localStorage.getItem("user"));
-    // const [isLogged, setIsLogged] = useState(!loggedUser);
+    // const [isLogged, setIsLogged] = useState(!!user);
 
     const handleLogout = () => {
         removeUser();
@@ -18,12 +18,13 @@ function NavBar({ removeUser, user }) {
                 <div>
                     <img src="/public/rideAgainLOGO.png" alt="Logo" />
                 </div>
-                <div className="btn-block">
-                    <button className="btn-orange">Add an ad</button>
-                </div>
+                <NavLink className="btn-orange" to="/createad">
+                    Add an ad
+                </NavLink>
             </div>
+            <Search />
             <div className="navbar-links">
-                <NavLink to={"/"}>Home</NavLink>               
+                <NavLink to={"/"}>Home</NavLink>
                 {/* <Search onSearch={handleSearch}/> */}
                 {!user ? (
                 // {!isLogged ? (
@@ -32,10 +33,14 @@ function NavBar({ removeUser, user }) {
                         <NavLink to={"/login"}>Login</NavLink>
                     </>
                 ) : (
-                    <button onClick={handleLogout}>Log out</button>
+                    <>
+                        <button className="button-logOut-Navbar" onClick={handleLogout}>
+                            Log out
+                        </button>
+                        {/* <span> BONJOUR {user.firstName}</span> */}
+                    </>
                 )}
             </div>
-            <Search/>
         </nav>
     );
 }
