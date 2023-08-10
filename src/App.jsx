@@ -16,6 +16,7 @@ import OrderDetails from "./pages/OrderDetails";
 import SeeMyAds from "./pages/SeeMyAds";
 import SearchResult from "./pages/SearchResult";
 import Search from "./components/Search";
+import PaymentPage from "./pages/PaymentPage";
 
 
 function App() {
@@ -66,6 +67,8 @@ function App() {
                 <Route path="/orderdetails/:id" element={<OrderDetails />} />
                 {/* <Route path="/edit-ad/:id" element={<EditAd />} /> */}
                 <Route path="/search-result" element={<SearchResult />} />
+                <Route path="/payment" element={<PaymentPage />} />
+
                 {/* <Route path="/favorites" element={<IsLoggedIn user={user}><Favoriting user={user} />
 						    </IsLoggedIn>}/> */}
             </Routes>

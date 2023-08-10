@@ -1,0 +1,33 @@
+#card-details {
+    justify-content: center;
+    text-align: center;
+}
+
+.card-inputs{
+    margin: 10px;
+    border-radius: 5px;
+    text-indent: 5%;
+
+}
+
+.card-labels{
+    font-weight: bold;
+    margin: 10px;
+}
+    
+
+#payment-button{
+    margin: 50px;
+    background-color: #59a52c;
+    color: white;
+    /* border-radius: 5%; */
+    border: none;
+    height: 50px;
+    width: 250px;
+    /* #6fca3a or 437d21 */
+}
+
+#payment-amount{
+    margin: 50px;
+}
+

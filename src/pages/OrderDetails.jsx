@@ -23,6 +23,7 @@ function OrderDetails() {
         return <div>Loading...</div>;
     }
 
+    const totalAmount = bike.delivery === "in person" ? bike.price : bike.price + 30
     return (
         <div>
             <h1>Order Details</h1>
@@ -38,10 +39,11 @@ function OrderDetails() {
                 <p>{bike.delivery === "in person" ? "Deliveray Cost : 0 €" : "Deliveray Cost : 30 €"}</p>
             </div>
             <div>
-                <p>Total Price: {bike.delivery === "in person" ? bike.price : bike.price + 30} €</p>
+                <p>Total Price: {totalAmount} €</p>
+                {/* <p>Total Price: {bike.delivery === "in person" ? bike.price : bike.price + 30} €</p> */}
             </div>
 
-            <Link to="/payment">
+            <Link to={`/payment?amount=${totalAmount}`}>
                 <button>Validate Order</button>
             </Link>
         </div>
