@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 import "./../styles/navbar.css";
 import Search from "./Search";
 
-function NavBar({ removeUser }) {
-    const user = JSON.parse(localStorage.getItem("user"));
-    const [isLogged, setIsLogged] = useState(!!user);
+function NavBar({ removeUser, user }) {
+    // const user = JSON.parse(localStorage.getItem("user"));
+    // const [isLogged, setIsLogged] = useState(!loggedUser);
 
     const handleLogout = () => {
         removeUser();
-        setIsLogged(false);
+        // setIsLogged(false);
     };
 
     return (
@@ -25,7 +25,8 @@ function NavBar({ removeUser }) {
             <div className="navbar-links">
                 <NavLink to={"/"}>Home</NavLink>               
                 {/* <Search onSearch={handleSearch}/> */}
-                {!isLogged ? (
+                {!user ? (
+                // {!isLogged ? (
                     <>
                         <NavLink to={"/signup"}>Sign Up</NavLink>
                         <NavLink to={"/login"}>Login</NavLink>

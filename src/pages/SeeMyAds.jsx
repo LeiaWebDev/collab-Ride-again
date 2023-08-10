@@ -44,10 +44,11 @@ function SeeMyAds({user}) {
 
   return (
     <>
+    <h1>My Ads</h1>
     {myAds.map((myAd)=>{
         return (
             <div className='MyAds' key = {myAd.id}>
-                <h1>My Ads</h1>
+                
                 <h2>{myAd.title}</h2>
                 <img src={myAd.image} alt="bike image" />
                 <h2>{myAd.type} bike</h2>
@@ -59,11 +60,11 @@ function SeeMyAds({user}) {
                 <h3>Description: {myAd.description}</h3>
                 <h3>Delivery method : {myAd.delivery}</h3>
                 <h3>Pick up location: {myAd.pickup}</h3>
-                <p>{myAd.userId}</p>
+                {/* <p>{myAd.userId}</p> */}
                 
-                <Link to={`/edit-ad/${myAd.id}`}>
+                {/* <Link to={`/edit-ad/${myAd.id}`}>
                 <button >Edit</button>
-                </Link>
+                </Link> */}
        
                 <button onClick={() => handleDeleteAd(myAd.id)}>Delete</button>
             </div>

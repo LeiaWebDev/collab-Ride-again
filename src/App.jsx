@@ -44,21 +44,22 @@ function App() {
 
     return (
         <>
-            <NavBar removeUser={removeUser} />
+            <NavBar removeUser={removeUser} user={user}/>
+            {/* user={loggedUser} */}
             {/* <Search searchString={searchString} handleSearch={setSearchString} /> */}
             {/* <SearchResult ads={ads} /> */}
 
             {user && (
-                <h1>
+                <h2 className="welcome">
                     Welcome {user.firstName} {user.lastName}!
-                </h1>
+                </h2>
             )}
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/login" element={<LoginPage storeUser={storeUser} />} />
                 <Route path="/signup" element={<SignupPage />} />
                 <Route path="/createad" element={<CreateAd user={user} />} />
-                <Route path="/validated-ad/:id" element={<ValidatedAd />} />
+                <Route path="/validated-ad/" element={<ValidatedAd />} />
                 {/* <Route path="/seemyads" element={<SeeMyAds />} /> */}
                 <Route path="/ads/my-ads" element={<SeeMyAds user={user} />} />
                 <Route path="/bike/:id" element={<OneBike />} /> 

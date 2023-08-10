@@ -42,11 +42,11 @@ function SearchResult({searchResults}) {
             {filteredAds.map((ad)=>{
             return <li key={ad.id}>
                 {/* <Link to={`/ad/${ad.id}`}> */}
-                <Link to={`bike/${ad.id}`}>
+                <Link to={`/bike/${ad.id}`}>
                 <h3>{ad.title}</h3>
                 </Link>
                  {/* <Link to={`/ad/${ad.id}`}> */}  
-                <Link to={`bike/${ad.id}`}>
+                <Link to={`/bike/${ad.id}`}>
                     {/* /////check with Conrad to modify the link name leading to OneAd description page */}
 
                 <img src={ad.image} alt={ad.title} />
