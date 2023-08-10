@@ -29,6 +29,7 @@ function NavBar({ removeUser, user }) {
                 </NavLink>
                 {/* <Search onSearch={handleSearch}/> */}
                 {!user ? (
+                // {!isLogged ? (
                     <>
                         <NavLink to={"/signup"}>
                             <img className="login-icon" src="../../public/account.png" alt="Sign Up" />

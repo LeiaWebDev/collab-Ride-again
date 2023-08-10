@@ -31,19 +31,23 @@ function OneBike({ user }) {
 
     const handleBuyClick = () => {
         // Check if the user is logged in ok
-        if (user || id) {
+        if (user||id) {
             // User is logged in, navigate to the OrderDetails page ok
             navigate(`/orderDetails/${id}`);
         } else {
-            // User is not logged in, navigate to the Signup page ok
-            // setPendingPurchase(true);
-            // navigate("/signup");
-            alert("You must be logged in to buy a bike");
+            // User is not logged in, ask to sign in
+            alert("you must be logged in to buy a bike")
+            
         }
     };
 
     // Si l'achat était en attente et que l'utilisateur est maintenant connecté,
     // redirigez-le vers la page d'achat
+    // useEffect(() => {
+    //     if (pendingPurchase && user) {
+    //         navigate(`/orderDetails/${id}`);
+    //     }
+    // }, [pendingPurchase, user, navigate, id]);
     // useEffect(() => {
     //     if (pendingPurchase && user) {
     //         navigate(`/orderDetails/${id}`);

@@ -61,13 +61,14 @@ function SeeMyAds({ user }) {
                         {/* <Link to={`/edit-ad/${myAd.id}`}>
                 <button >Edit</button>
                 </Link> */}
-
-                        <button onClick={() => handleDeleteAd(myAd.id)}>Delete</button>
-                    </div>
-                );
-            })}
-        </>
-    );
+       
+                <button onClick={() => handleDeleteAd(myAd.id)}>Delete</button>
+            </div>
+        )
+    })}
+    
+    </>
+  )
 }
 
 export default SeeMyAds;
