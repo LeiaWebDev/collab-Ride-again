@@ -14,8 +14,8 @@ import ValidatedAd from "./pages/ValidatedAd";
 import OneBike from "./pages/OneBike";
 import OrderDetails from "./pages/OrderDetails";
 import SeeMyAds from "./pages/SeeMyAds";
-import SearchResult from "./pages/searchResult";
-// import Search from "./components/Search";
+import SearchResult from "./pages/SearchResult";
+import Search from "./components/Search";
 
 function App() {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
