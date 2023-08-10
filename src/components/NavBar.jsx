@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 import "./../styles/navbar.css";
 import Search from "./Search";
 
-function NavBar({ removeUser }) {
-    const user = JSON.parse(localStorage.getItem("user"));
-    const [isLogged, setIsLogged] = useState(!!user);
+function NavBar({ removeUser, user }) {
+    // const user = JSON.parse(localStorage.getItem("user"));
+    // const [isLogged, setIsLogged] = useState(!!user);
 
     const handleLogout = () => {
         removeUser();
-        setIsLogged(false);
+        // setIsLogged(false);
     };
 
     return (
@@ -18,23 +18,28 @@ function NavBar({ removeUser }) {
                 <div>
                     <img src="/public/rideAgainLOGO.png" alt="Logo" />
                 </div>
-                <div className="btn-block">
-                    <button className="btn-orange">Add an ad</button>
-                </div>
+                <NavLink className="btn-orange" to="/createad">
+                    Add an ad
+                </NavLink>
             </div>
+            <Search />
             <div className="navbar-links">
-                <NavLink to={"/"}>Home</NavLink>               
+                <NavLink to={"/"}>Home</NavLink>
                 {/* <Search onSearch={handleSearch}/> */}
-                {!isLogged ? (
+                {!user ? (
                     <>
                         <NavLink to={"/signup"}>Sign Up</NavLink>
                         <NavLink to={"/login"}>Login</NavLink>
                     </>
                 ) : (
-                    <button onClick={handleLogout}>Log out</button>
+                    <>
+                        <button className="button-logOut-Navbar" onClick={handleLogout}>
+                            Log out
+                        </button>
+                        {/* <span> BONJOUR {user.firstName}</span> */}
+                    </>
                 )}
             </div>
-            <Search/>
         </nav>
     );
 }

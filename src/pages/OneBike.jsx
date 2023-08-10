@@ -3,23 +3,22 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 // import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { Map } from "leaflet";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
+// import { Map } from "leaflet";
 import "./../styles/OneBike.css";
 import "leaflet/dist/leaflet.css";
 
 function OneBike({ user }) {
     const { id } = useParams();
-
-    const navigate = useNavigate(); // Utilisation du hook useNavigate
-
+    const navigate = useNavigate();
     const [bike, setBike] = useState(null);
 
-    const [pendingPurchase, setPendingPurchase] = useState(false);
+    //const [pendingPurchase, setPendingPurchase] = useState(false);
 
     useEffect(() => {
         axios
             .get(`https://ride-again.adaptable.app/ads/${id}?_expand=user`)
+            //.get(`https://ride-again.adaptable.app/users/${user.id}`)
             .then((response) => {
                 console.log(response.data);
                 setBike(response.data);
@@ -28,32 +27,34 @@ function OneBike({ user }) {
                 console.log("Error fetching data:", error);
             });
     }, [id]);
+    // }, [user.id]);
 
     const handleBuyClick = () => {
         // Check if the user is logged in ok
-        if (user) {
+        if (user || id) {
             // User is logged in, navigate to the OrderDetails page ok
             navigate(`/orderDetails/${id}`);
         } else {
             // User is not logged in, navigate to the Signup page ok
-            setPendingPurchase(true);
-            navigate("/signup");
+            // setPendingPurchase(true);
+            // navigate("/signup");
+            alert("You must be logged in to buy a bike");
         }
     };
 
     // Si l'achat était en attente et que l'utilisateur est maintenant connecté,
     // redirigez-le vers la page d'achat
-    useEffect(() => {
-        if (pendingPurchase && user) {
-            navigate(`/orderDetails/${id}`);
-        }
-    }, [pendingPurchase, user, navigate, id]);
+    // useEffect(() => {
+    //     if (pendingPurchase && user) {
+    //         navigate(`/orderDetails/${id}`);
+    //     }
+    // }, [pendingPurchase, user, navigate, id]);
 
     if (!bike) {
         return <div>Loading...</div>;
     }
 
-    const position = [5.0817, 38.8097];
+    let position = [bike.user.latitude, bike.user.longitude];
     return (
         <div>
             <div className="toto">
@@ -79,7 +80,7 @@ function OneBike({ user }) {
                         scrollWheelZoom={false}
                     >
                         <TileLayer
-                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                            // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
                         <Marker id="marker" position={position}>

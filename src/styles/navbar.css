@@ -18,11 +18,16 @@
     width: 100px;
 }
 
+/* .button-logOut-Navbar {
+    width: 100%;
+} */
+
 .navbar-links {
     gap: 25px;
     font-size: 24px;
     width: 260px;
     display: flex;
+    margin-right: 10%;
 }
 .btn-block {
     width: 100%;
@@ -38,4 +43,7 @@ button {
     border-radius: 25px;
     font-family: cinzel;
     font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

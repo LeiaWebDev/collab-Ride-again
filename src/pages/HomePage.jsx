@@ -6,7 +6,7 @@ import "./../styles/footer.css";
 
 function HomePage() {
     // 2 on line 86, we are using useState hook to create a state variable called randomCategories
-    const [randomCategories, setRandomCategories] = useState({
+    const [randomAds, setRandomAds] = useState({
         mechanical: [],
         electric: [],
         electricAssist: [],
@@ -25,7 +25,7 @@ function HomePage() {
                 const electricAds = shuffleArray(electricResponse.data).slice(0, 3);
                 const electricAssistAds = shuffleArray(electricAssistResponse.data).slice(0, 3);
 
-                setRandomCategories({
+                setRandomAds({
                     mechanical: mechanicalAds,
                     electric: electricAds,
                     electricAssist: electricAssistAds,
@@ -46,29 +46,28 @@ function HomePage() {
         return array;
     }
 
-    if (
-        !randomCategories.mechanical.length ||
-        !randomCategories.electric.length ||
-        !randomCategories.electricAssist.length
-    ) {
+    if (!randomAds.mechanical.length || !randomAds.electric.length || !randomAds.electricAssist.length) {
         return <div className="loading">Loading...</div>;
     }
 
     return (
         <div className="homePage">
+            <div>
+                <h1>Suggested ads</h1>
+            </div>
             <h1>Mechanical bikes</h1>
             <div className="random-categories">
                 <div className="categories-block">
-                    {randomCategories.mechanical.map((category) => (
-                        <section key={category.id}>
-                            <h2>{category.model}</h2>
-                            <Link to={`/bike/${category.id}`}>
-                                <img className="image-homePage-categories" src={category.image} alt={category.type} />
+                    {randomAds.mechanical.map((ad) => (
+                        <section key={ad.id}>
+                            <h2>{ad.model}</h2>
+                            <Link to={`/bike/${ad.id}`}>
+                                <img className="image-homePage-categories" src={ad.image} alt={ad.type} />
                             </Link>
                             {/* <h2>{category.description}</h2> */}
-                            <p>{category.brand}</p>
-                            <p>{category.price} €</p>
-                            <p>Condition : {category.status}</p>
+                            <p>{ad.brand}</p>
+                            <p>{ad.price} €</p>
+                            <p>Condition : {ad.status}</p>
 
                             {/* <img src={category.image} alt={category.type} /> */}
                         </section>
@@ -79,23 +78,19 @@ function HomePage() {
             <h1>Electric bikes</h1>
             <div className="random-categories">
                 <div className="categories-block">
-                    {randomCategories.electric.map((category) => (
-                        <section key={category.id}>
+                    {randomAds.electric.map((ad) => (
+                        <section key={ad.id}>
                             <div className="categories-title">
-                                <h2>{category.model}</h2>
+                                <h2>{ad.model}</h2>
                                 <div className="info-categories-bike">
                                     <div className="image-categories-random"></div>
-                                    <Link to={`/bike/${category.id}`}>
-                                        <img
-                                            className="image-homePage-categories"
-                                            src={category.image}
-                                            alt={category.type}
-                                        />
+                                    <Link to={`/bike/${ad.id}`}>
+                                        <img className="image-homePage-categories" src={ad.image} alt={ad.type} />
                                     </Link>
                                     {/* <h2>{category.description}</h2> */}
-                                    <p>{category.brand}</p>
-                                    <p>{category.price} €</p>
-                                    <p>Condition : {category.status}</p>
+                                    <p>{ad.brand}</p>
+                                    <p>{ad.price} €</p>
+                                    <p>Condition : {ad.status}</p>
 
                                     {/* <img src={category.image} alt={category.type} /> */}
                                 </div>
@@ -108,16 +103,16 @@ function HomePage() {
             <h1>Electric Assist bikes</h1>
             <div className="random-categories">
                 <div className="categories-block">
-                    {randomCategories.electricAssist.map((category) => (
-                        <section key={category.id}>
-                            <h2>{category.model}</h2>
-                            <Link to={`/bike/${category.id}`}>
-                                <img className="image-homePage-categories" src={category.image} alt={category.type} />
+                    {randomAds.electricAssist.map((ad) => (
+                        <section key={ad.id}>
+                            <h2>{ad.model}</h2>
+                            <Link to={`/bike/${ad.id}`}>
+                                <img className="image-homePage-categories" src={ad.image} alt={ad.type} />
                             </Link>
                             {/* <h2>{category.description}</h2> */}
-                            <p>{category.brand}</p>
-                            <p>{category.price} €</p>
-                            <p>Condition : {category.status}</p>
+                            <p>{ad.brand}</p>
+                            <p>{ad.price} €</p>
+                            <p>Condition : {ad.status}</p>
 
                             {/* <img src={category.image} alt={category.type} /> */}
                         </section>
