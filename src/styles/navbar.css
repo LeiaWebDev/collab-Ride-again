@@ -13,6 +13,7 @@
 .navbar-logo {
     display: flex;
     align-items: center;
+    gap: 100px;
 }
 .navbar-logo img {
     width: 100px;
@@ -28,6 +29,8 @@
     width: 260px;
     display: flex;
     margin-right: 10%;
+
+    justify-content: right;
 }
 .btn-block {
     width: 100%;
@@ -37,13 +40,18 @@ button {
     font-size: 24px;
 }
 .btn-orange {
-    background-color: orange;
-    width: 300px;
-    height: 50px;
+    background-color: #e58f24;
+    width: 180px;
+    height: 40px;
     border-radius: 25px;
     font-family: cinzel;
-    font-size: 22px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+}
+
+.login-icon {
+    width: 30px;
 }

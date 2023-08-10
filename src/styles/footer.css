@@ -8,15 +8,21 @@ a {
     font-size: 22px;
 }
 
-/* h3,
-.list-items,
-.para-text {
-    font-size: 24px;
-} */
+.list-items {
+    list-style: none;
+}
+
+.allRightReserved {
+    font-size: 16px;
+}
+
+.logo-footer {
+    width: 150px;
+}
 
 .first-block-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .new_footer_area {
@@ -24,7 +30,7 @@ a {
 }
 
 .new_footer_top {
-    padding: 120px 0px 270px;
+    padding: 50px 0px 50px;
     position: relative;
     overflow-x: hidden;
 }

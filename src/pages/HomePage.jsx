@@ -53,14 +53,14 @@ function HomePage() {
     return (
         <div className="homePage">
             <div>
-                <h1>Suggested ads</h1>
+                <h>Suggested ads</h>
             </div>
-            <h1>Mechanical bikes</h1>
+            <h1>Mechanical bikes you may like</h1>
             <div className="random-categories">
                 <div className="categories-block">
                     {randomAds.mechanical.map((ad) => (
                         <section key={ad.id}>
-                            <h2>{ad.model}</h2>
+                            <h2 className="title-homePage-block">{ad.model}</h2>
                             <Link to={`/bike/${ad.id}`}>
                                 <img className="image-homePage-categories" src={ad.image} alt={ad.type} />
                             </Link>
@@ -75,13 +75,15 @@ function HomePage() {
                 </div>
             </div>
 
-            <h1>Electric bikes</h1>
             <div className="random-categories">
+                <div>
+                    <h2>Electric bikes you may like</h2>
+                </div>
                 <div className="categories-block">
                     {randomAds.electric.map((ad) => (
                         <section key={ad.id}>
                             <div className="categories-title">
-                                <h2>{ad.model}</h2>
+                                <h2 className="title-homePage-block">{ad.model}</h2>
                                 <div className="info-categories-bike">
                                     <div className="image-categories-random"></div>
                                     <Link to={`/bike/${ad.id}`}>
@@ -100,12 +102,14 @@ function HomePage() {
                 </div>
             </div>
 
-            <h1>Electric Assist bikes</h1>
             <div className="random-categories">
+                <div>
+                    <h2>Electric Assist bikes you may like</h2>
+                </div>
                 <div className="categories-block">
                     {randomAds.electricAssist.map((ad) => (
                         <section key={ad.id}>
-                            <h2>{ad.model}</h2>
+                            <h2 className="title-homePage-block">{ad.model}</h2>
                             <Link to={`/bike/${ad.id}`}>
                                 <img className="image-homePage-categories" src={ad.image} alt={ad.type} />
                             </Link>
@@ -119,7 +123,7 @@ function HomePage() {
                     ))}
                 </div>
             </div>
-            <button>Add an ad</button>
+            <button className="btn-orange border-none">Create an ad</button>
         </div>
     );
 }
