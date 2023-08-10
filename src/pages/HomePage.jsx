@@ -52,10 +52,11 @@ function HomePage() {
 
     return (
         <div className="homePage">
-            <div>
-                <h>Suggested ads</h>
+            <h>Suggested ads</h>
+            <div className="block-area-title-homePage">
+                {" "}
+                <h1>Mechanical bikes you may like</h1>
             </div>
-            <h1>Mechanical bikes you may like</h1>
             <div className="random-categories">
                 <div className="categories-block">
                     {randomAds.mechanical.map((ad) => (
@@ -76,7 +77,7 @@ function HomePage() {
             </div>
 
             <div className="random-categories">
-                <div>
+                <div className="block-area-title-homePage">
                     <h2>Electric bikes you may like</h2>
                 </div>
                 <div className="categories-block">
@@ -103,7 +104,7 @@ function HomePage() {
             </div>
 
             <div className="random-categories">
-                <div>
+                <div className="block-area-title-homePage">
                     <h2>Electric Assist bikes you may like</h2>
                 </div>
                 <div className="categories-block">

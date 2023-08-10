@@ -12,6 +12,10 @@ a {
     list-style: none;
 }
 
+.last-block-right-reserved {
+    line-height: 0.5;
+}
+
 .allRightReserved {
     font-size: 16px;
 }
