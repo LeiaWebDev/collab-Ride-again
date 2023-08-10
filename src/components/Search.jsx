@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import SearchResult from "../pages/SearchResult";
+// import SearchResult from "../pages/SearchResult";
 import { useNavigate } from "react-router-dom";
 import "./../styles/search.css";
 
