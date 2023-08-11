@@ -71,3 +71,7 @@ label {
     font-weight: bold;
     border: none;
 }
+
+.label-form-created-ad {
+    font-size: 20px;
+}

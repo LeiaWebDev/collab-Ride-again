@@ -23,3 +23,7 @@
     margin-bottom: 20px; /* Espacement vertical entre les lignes d'images */
     list-style: none;
 }
+
+.price-search-result {
+    font-size: 22px;
+}

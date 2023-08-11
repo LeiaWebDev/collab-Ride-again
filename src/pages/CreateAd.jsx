@@ -142,7 +142,9 @@ function CreateAd({ user }) {
                     <h3>Create your ad</h3>
                     <form className="form-create-ad" onSubmit={handleSubmit}>
                         <div className="block-area-label-input-form">
-                            <label htmlFor="title">Title of your ad</label>
+                            <label className="label-form-created-ad" htmlFor="title">
+                                Title of your ad
+                            </label>
                             <input
                                 className="input-createAd"
                                 type="text"
@@ -153,7 +155,9 @@ function CreateAd({ user }) {
                             />
                         </div>
                         <div className="block-area-label-input-form">
-                            <label htmlFor="type">Type of bicycle</label>
+                            <label className="label-form-created-ad" htmlFor="type">
+                                Type of bicycle
+                            </label>
                             <select value={type} id="type" onChange={(e) => setType(e.target.value)}>
                                 <option value="Select your bicycle type">Select your bicycle type</option>
                                 <option value="Mechanical">Mechanical bicycle</option>
@@ -162,7 +166,9 @@ function CreateAd({ user }) {
                             </select>
                         </div>
                         <div className="block-area-label-input-form">
-                            <label htmlFor="brand">Brand of bicycle</label>
+                            <label className="label-form-created-ad" htmlFor="brand">
+                                Brand of bicycle
+                            </label>
                             <input
                                 className="input-createAd"
                                 type="text"
@@ -173,7 +179,9 @@ function CreateAd({ user }) {
                             />
                         </div>
                         <div className="block-area-label-input-form">
-                            <label htmlFor="model">Model of bicycle</label>
+                            <label className="label-form-created-ad" htmlFor="model">
+                                Model of bicycle
+                            </label>
                             <input
                                 className="input-createAd"
                                 type="text"
@@ -184,7 +192,9 @@ function CreateAd({ user }) {
                             />
                         </div>
                         <div className="block-area-label-input-form">
-                            <label htmlFor="description">Description</label>
+                            <label className="label-form-created-ad" htmlFor="description">
+                                Description
+                            </label>
                             <textarea
                                 type="text"
                                 id="description"
@@ -194,7 +204,9 @@ function CreateAd({ user }) {
                             />
                         </div>
                         <div className="block-area-label-input-form">
-                            <label htmlFor="price">Price (in Euros)</label>
+                            <label className="label-form-created-ad" htmlFor="price">
+                                Price (in Euros)
+                            </label>
                             <input
                                 className="input-createAd"
                                 type="number"
@@ -205,7 +217,9 @@ function CreateAd({ user }) {
                             />
                         </div>
                         <div className="block-area-label-input-form">
-                            <label htmlFor="usage">Usage of bicycle</label>
+                            <label className="label-form-created-ad" htmlFor="usage">
+                                Usage of bicycle
+                            </label>
                             <input
                                 className="input-createAd"
                                 type="text"
@@ -229,7 +243,9 @@ function CreateAd({ user }) {
                             </select>
                         </div>
                         <div className="block-area-label-input-form">
-                            <label htmlFor="delivery">Delivery options</label>
+                            <label className="label-form-created-ad" htmlFor="delivery">
+                                Delivery options
+                            </label>
                             <select value={delivery} id="delivery" onChange={(e) => setDelivery(e.target.value)}>
                                 <option value="Select the delivery option">Select the delivery option</option>
                                 <option value="in person">In person delivery</option>
@@ -237,7 +253,9 @@ function CreateAd({ user }) {
                             </select>
                         </div>
                         <div className="block-area-label-input-form">
-                            <label htmlFor="pickup">Pick up location</label>
+                            <label className="label-form-created-ad" htmlFor="pickup">
+                                Pick up location
+                            </label>
                             <input
                                 className="input-createAd"
                                 type="text"
@@ -257,7 +275,9 @@ function CreateAd({ user }) {
             onFileSelectError={handleFileSelectError}
             /> */}
                         <div className="block-area-label-input-form">
-                            <label htmlFor="image">Image of bicycle</label>
+                            <label className="label-form-created-ad" htmlFor="image">
+                                Image of bicycle
+                            </label>
                             <input
                                 className="input-createAd"
                                 type="text"
