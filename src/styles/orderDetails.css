@@ -1,0 +1,19 @@
+.main-order-detail-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.order-details-page {
+    width: 70%;
+}
+
+.image-order-detail-page {
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}

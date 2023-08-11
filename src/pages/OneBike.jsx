@@ -22,6 +22,16 @@ function OneBike({ user }) {
         shadowAnchor: null
     });
 
+    const myIcon = L.icon({
+        iconUrl: `/marker-icon-2x.png`,
+        iconSize: [25, 41],
+        iconAnchor: [32, 64],
+        popupAnchor: null,
+        shadowUrl: `/marker-shadow.png`,
+        shadowSize: null,
+        shadowAnchor: null,
+    });
+
     //const [pendingPurchase, setPendingPurchase] = useState(false);
 
     useEffect(() => {
@@ -40,13 +50,12 @@ function OneBike({ user }) {
 
     const handleBuyClick = () => {
         // Check if the user is logged in ok
-        if (user||id) {
+        if (user || id) {
             // User is logged in, navigate to the OrderDetails page ok
             navigate(`/orderDetails/${id}`);
         } else {
             // User is not logged in, ask to sign in
-            alert("you must be logged in to buy a bike")
-            
+            alert("you must be logged in to buy a bike");
         }
     };
 
@@ -70,22 +79,8 @@ function OneBike({ user }) {
     let position = [bike.user.latitude, bike.user.longitude];
     return (
         <div>
-            <div className="toto">
-                <p>{bike.title}</p>
-                <img className="image-OneBike" src={bike.image} alt={bike.type} />
-                <p>{bike.type}</p>
-                <p>{bike.brand}</p>
-                <p>{bike.model}</p>
-                <p>{bike.description}</p>
-                <p>Price : {bike.price} €</p>
-                <p> {bike.location}</p>
-                <p>Delivery location : {bike.pickup}</p>
-                <p>Product collection method : {bike.delivery}</p>
-
-                <button onClick={handleBuyClick}>Buy</button>
-                {/* <img src="/téléchargement.jpg" alt="logo" /> */}
-
-                <div className="map-ride-again">
+            <div className="main-one-bike-page">
+                <div className="map-one-bike">
                     <MapContainer
                         center={position}
                         style={{ width: "750px", height: "650px" }}
@@ -103,13 +98,31 @@ function OneBike({ user }) {
                         </Marker>
                     </MapContainer>
                 </div>
-            </div>
+                <div className="infos-one-bike">
+                    <p>{bike.title}</p>
+                    <img className="image-OneBike" src={bike.image} alt={bike.type} />
+                    <p>{bike.type}</p>
+                    <p>{bike.brand}</p>
+                    <p>{bike.model}</p>
+                    <p>{bike.description}</p>
+                    <p>{bike.price} €</p>
+                    <p>{bike.location}</p>
+                    <p>Delivery location : {bike.pickup}</p>
+                    <p>Product collection method : {bike.delivery}</p>
 
+                    {/* <img src="/téléchargement.jpg" alt="logo" /> */}
+                </div>
+            </div>
             <div>
                 <p>
                     Sold by {bike.user.firstName} {bike.user.lastName} : Member since {bike.user.creationDate}
                 </p>
                 {/* <p>Member since {bike.user.creationDate}</p> */}
+            </div>
+            <div className="btn-one-bike">
+                <button className="btn-orange" onClick={handleBuyClick}>
+                    Buy
+                </button>
             </div>
 
             {/* <p>{bike.firstname}</p> */}

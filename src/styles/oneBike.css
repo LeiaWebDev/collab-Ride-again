@@ -1,5 +1,31 @@
-.image-OneBike {
+.main-one-bike-page {
     width: 100%;
-    height: 400px;
-    
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.map-one-bike {
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+}
+
+.leaflet-container {
+    width: 600px !important;
+    height: 400px !important;
+}
+
+.infos-one-bike {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.2;
+}
+.infos-one-bike .image-OneBike {
+    width: 500px;
+}
+
+.btn-one-bike {
+    display: flex;
+    justify-content: center;
 }

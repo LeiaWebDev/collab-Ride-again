@@ -1,0 +1,10 @@
+.validatedAd-area-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.validatedAd-link-area button {
+    width: 250px;
+}
