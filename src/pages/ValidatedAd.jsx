@@ -1,6 +1,6 @@
-import React from "react";
-import SeeMyAds from "./SeeMyAds";
-import CreateAd from "./CreateAd";
+// import React from "react";
+// import SeeMyAds from "./SeeMyAds";
+// import CreateAd from "./CreateAd";
 import { Link, useParams } from "react-router-dom";
 import "./../styles/validatedAds.css";
 
