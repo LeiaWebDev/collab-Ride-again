@@ -71,7 +71,7 @@ function LoginPage({ storeUser }) {
                     </div>
                 </div>
                 <p className="error">{error}</p>
-                <button className="btn-orange">Login</button>
+                <button className="btn-orange btn-login">Login</button>
             </form>
         </div>
     );

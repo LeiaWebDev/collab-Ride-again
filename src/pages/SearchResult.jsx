@@ -39,10 +39,10 @@ function SearchResult({ searchResults }) {
             <div className="section-blocks-title-ul-search"></div>
             <h2>Your search results</h2>
             {/* <Search onSearch={handleSearch}/> */}
-            <ul>
+            <ul className="search-results-list">
                 {filteredAds.map((ad) => {
                     return (
-                        <li key={ad.id}>
+                        <li className="search-result" key={ad.id}>
                             <div>
                                 {/* <Link to={`/ad/${ad.id}`}> */}
                                 <Link to={`/bike/${ad.id}`}>

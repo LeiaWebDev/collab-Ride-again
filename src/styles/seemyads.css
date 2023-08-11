@@ -32,6 +32,11 @@
     flex-direction: column-reverse;
 }
 
+.subtitle-one-bike-long {
+    line-height: 1.2;
+    text-align: center;
+}
+
 .button-delete-my-ads {
     width: 100%;
     /* align-items: center; */
@@ -40,5 +45,3 @@
     justify-content: center;
     background-color: #fcfad4;
 }
-
-@media;

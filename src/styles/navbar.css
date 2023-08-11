@@ -52,6 +52,7 @@ button {
     align-items: center;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 }
 
 .login-icon {
