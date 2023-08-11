@@ -39,6 +39,15 @@ function OneBike({ user }) {
             alert("you must be logged in to buy a bike");
         }
     };
+    const myIcon = {
+        iconUrl: "/marker-icon-2x.png",
+        iconSize: [25, 41],
+        iconAnchor: [32, 64],
+        popupAnchor: null,
+        shadowUrl: "/marker-shadow.png",
+        shadowSize: null,
+        shadowAnchor: null,
+    };
 
     // Si l'achat était en attente et que l'utilisateur est maintenant connecté,
     // redirigez-le vers la page d'achat
