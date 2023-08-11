@@ -6,8 +6,17 @@
     flex-direction: column;
 }
 
+.image-order-details {
+    width: 700px;
+    margin-bottom: 5%;
+}
+
 .order-details-page {
     width: 70%;
+}
+
+.btn-validate-order {
+    margin-top: 15%;
 }
 
 .image-order-detail-page {

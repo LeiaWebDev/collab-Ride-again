@@ -1,5 +1,6 @@
 .main-search-bikes-page {
     width: 100%;
+    margin-top: 140px;
 }
 
 .section-blocks-title-ul-search {
@@ -10,13 +11,14 @@
     width: 300px;
 }
 
-ul {
+.search-results-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Ajustez l'espacement horizontal comme vous le souhaitez */
+    text-align: center;
 }
 
-li {
+.search-result {
     width: calc(50% - 10px); /* Deux images par ligne, avec espacement */
     margin-bottom: 20px; /* Espacement vertical entre les lignes d'images */
     list-style: none;

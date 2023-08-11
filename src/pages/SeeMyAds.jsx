@@ -53,15 +53,15 @@ function SeeMyAds({ user }) {
                                         <img src={myAd.image} alt="bike image" />
                                     </div>
                                     <div className="infos-one-bike">
-                                        <h2 className="subtitle-one-bike">{myAd.title}</h2>
+                                        <h2 className="subtitle-one-bike-long">{myAd.title}</h2>
                                         <h2 className="subtitle-one-bike">{myAd.type} bike</h2>
                                         <h3 className="subtitle-one-bike">{myAd.status} condition</h3>
                                         <h3 className="subtitle-one-bike">Brand: {myAd.brand}</h3>
                                         <h3 className="subtitle-one-bike">Model: {myAd.model}</h3>
                                         <h3 className="subtitle-one-bike">Usage: {myAd.usage}</h3>
-                                        <h3 className="subtitle-one-bike">Description: {myAd.description}</h3>
+                                        <h3 className="subtitle-one-bike-long">Description: {myAd.description}</h3>
                                         <h3 className="subtitle-one-bike">Delivery method : {myAd.delivery}</h3>
-                                        <h3 className="subtitle-one-bike">Pick up location: {myAd.pickup}</h3>
+                                        <h3 className="subtitle-one-bike-long">Pick up location: {myAd.pickup}</h3>
                                         <h2 className="subtitle-one-bike">{myAd.price} Euros</h2>
                                     </div>
                                     {/* <p>{myAd.userId}</p> */}

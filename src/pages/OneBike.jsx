@@ -5,22 +5,13 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 // import { Map } from "leaflet";
-import "../styles/oneBike.css"
+import "../styles/oneBike.css";
 import "leaflet/dist/leaflet.css";
 
 function OneBike({ user }) {
     const { id } = useParams();
     const navigate = useNavigate();
     const [bike, setBike] = useState(null);
-    const myIcon = L.icon({
-        iconUrl: '/marker-icon-2x.png',
-        iconSize: [25,41],
-        iconAnchor: [32, 64],
-        popupAnchor: null,
-        shadowUrl: '/marker-shadow.png',
-        shadowSize: null,
-        shadowAnchor: null
-    });
 
     //const [pendingPurchase, setPendingPurchase] = useState(false);
 

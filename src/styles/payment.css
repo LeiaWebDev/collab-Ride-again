@@ -1,26 +1,28 @@
 #card-details {
     justify-content: center;
     text-align: center;
-}
-.card-number{
-    display: block;
-    /* flex-direction: column; */
+    display: flex;
 }
 
-.card-inputs{
+.card-inputs {
     margin: 10px;
     border-radius: 5px;
     text-indent: 5%;
-
 }
 
-.card-labels{
+.Card {
+    display: FLEX;
+}
+
+.card-labels {
     font-weight: bold;
     margin: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
 }
-    
 
-#payment-button{
+#payment-button {
     margin: 50px;
     background-color: #59a52c;
     color: white;
@@ -31,7 +33,17 @@
     /* #6fca3a or 437d21 */
 }
 
-#payment-amount{
+#payment-amount {
     margin: 50px;
 }
 
+form #card-details {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.toto {
+    width: 70%;
+}

@@ -18,7 +18,6 @@ import SearchResult from "./pages/SearchResult";
 import Search from "./components/Search";
 import PaymentPage from "./pages/PaymentPage";
 
-
 function App() {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
     // const [ads, setAds] = useState([]);
@@ -45,7 +44,8 @@ function App() {
 
     return (
         <>
-            <NavBar removeUser={removeUser} user={user} />
+            {user ? <NavBar removeUser={removeUser} user={user} /> : <NavBar />}
+            {/* <NavBar removeUser={removeUser} user={user} /> */}
             {/* <Search searchString={searchString} handleSearch={setSearchString} /> */}
             {/* <SearchResult ads={ads} /> */}
             {user && (
