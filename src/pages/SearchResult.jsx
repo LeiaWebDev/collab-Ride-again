@@ -57,7 +57,7 @@ function SearchResult({ searchResults }) {
 
                                 <h3>{ad.type} bike</h3>
                                 <h4>{ad.status} condition</h4>
-                                <h4>{ad.price} euros</h4>
+                                <h4 className="price-search-result">{ad.price} euros</h4>
                                 <p>Brand: {ad.brand}</p>
                                 {/* <p>Model: {ad.model}</p>
                 <p>Description: {ad.description}</p>

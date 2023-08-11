@@ -78,15 +78,8 @@ function OneBike({ user }) {
                         zoom={13}
                         scrollWheelZoom={false}
                     >
-                        <TileLayer
-                            // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                        />
-                        <Marker icon={myIcon} id="marker" position={position}>
-                            {/* <Popup>
-                                A pretty CSS3 popup. <br /> Easily customizable.
-                            </Popup> */}
-                        </Marker>
+                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        <Marker icon={myIcon} id="marker" position={position}></Marker>
                     </MapContainer>
                 </div>
                 <div className="infos-one-bike">

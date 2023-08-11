@@ -55,7 +55,7 @@ function HomePage() {
             <h1>Suggested ads</h1>
             <div className="block-area-title-homePage">
                 {" "}
-                <h1>Mechanical bikes you may like</h1>
+                <h2>Mechanical bikes you may like</h2>
             </div>
             <div className="random-categories">
                 <div className="categories-block">
