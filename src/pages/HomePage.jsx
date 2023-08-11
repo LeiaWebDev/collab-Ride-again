@@ -52,7 +52,7 @@ function HomePage() {
 
     return (
         <div className="homePage">
-            <h>Suggested ads</h>
+            <h1>Suggested ads</h1>
             <div className="block-area-title-homePage">
                 {" "}
                 <h1>Mechanical bikes you may like</h1>

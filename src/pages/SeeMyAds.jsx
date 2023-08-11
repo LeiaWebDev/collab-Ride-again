@@ -4,6 +4,7 @@ import ValidatedAd from "./ValidatedAd";
 import axios from "axios";
 import CreateAd from "./CreateAd";
 import EditAd from "./EditAd";
+import "./../styles/seemyads.css";
 
 function SeeMyAds({ user }) {
     const [myAds, setMyAds] = useState(null);
@@ -41,34 +42,46 @@ function SeeMyAds({ user }) {
 
     return (
         <>
-            <h1>My Ads</h1>
+            <h1 className="title-see-my-ads">My Ads</h1>
             {myAds.map((myAd) => {
                 return (
-                    <div className="MyAds" key={myAd.id}>
-                        <h2>{myAd.title}</h2>
-                        <img src={myAd.image} alt="bike image" />
-                        <h2>{myAd.type} bike</h2>
-                        <h2>{myAd.price} Euros</h2>
-                        <h3>{myAd.status} condition</h3>
-                        <h3>Brand: {myAd.brand}</h3>
-                        <h3>Model: {myAd.model}</h3>
-                        <h3>Usage: {myAd.usage}</h3>
-                        <h3>Description: {myAd.description}</h3>
-                        <h3>Delivery method : {myAd.delivery}</h3>
-                        <h3>Pick up location: {myAd.pickup}</h3>
-                        {/* <p>{myAd.userId}</p> */}
+                    <>
+                        <div className="main-see-ads-block">
+                            <div className="MyAds" key={myAd.id}>
+                                <div className="seeMyAds-page">
+                                    <div className="picture-one-bike">
+                                        <img src={myAd.image} alt="bike image" />
+                                    </div>
+                                    <div className="infos-one-bike">
+                                        <h2 className="subtitle-one-bike">{myAd.title}</h2>
+                                        <h2 className="subtitle-one-bike">{myAd.type} bike</h2>
+                                        <h3 className="subtitle-one-bike">{myAd.status} condition</h3>
+                                        <h3 className="subtitle-one-bike">Brand: {myAd.brand}</h3>
+                                        <h3 className="subtitle-one-bike">Model: {myAd.model}</h3>
+                                        <h3 className="subtitle-one-bike">Usage: {myAd.usage}</h3>
+                                        <h3 className="subtitle-one-bike">Description: {myAd.description}</h3>
+                                        <h3 className="subtitle-one-bike">Delivery method : {myAd.delivery}</h3>
+                                        <h3 className="subtitle-one-bike">Pick up location: {myAd.pickup}</h3>
+                                        <h2 className="subtitle-one-bike">{myAd.price} Euros</h2>
+                                    </div>
+                                    {/* <p>{myAd.userId}</p> */}
 
-                        {/* <Link to={`/edit-ad/${myAd.id}`}>
+                                    {/* <Link to={`/edit-ad/${myAd.id}`}>
                 <button >Edit</button>
                 </Link> */}
-       
-                <button onClick={() => handleDeleteAd(myAd.id)}>Delete</button>
-            </div>
-        )
-    })}
-    
-    </>
-  )
+                                </div>
+                            </div>
+                            <div className="button-delete-my-ads">
+                                <button className="btn-orange" onClick={() => handleDeleteAd(myAd.id)}>
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </>
+                );
+            })}
+        </>
+    );
 }
 
 export default SeeMyAds;
