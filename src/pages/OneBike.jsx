@@ -12,6 +12,15 @@ function OneBike({ user }) {
     const { id } = useParams();
     const navigate = useNavigate();
     const [bike, setBike] = useState(null);
+    const myIcon = L.icon({
+        iconUrl: '/marker-icon-2x.png',
+        iconSize: [25,41],
+        iconAnchor: [32, 64],
+        popupAnchor: null,
+        shadowUrl: '/marker-shadow.png',
+        shadowSize: null,
+        shadowAnchor: null
+    });
 
     //const [pendingPurchase, setPendingPurchase] = useState(false);
 
@@ -87,7 +96,7 @@ function OneBike({ user }) {
                             // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
-                        <Marker id="marker" position={position}>
+                        <Marker icon={myIcon} id="marker" position={position}>
                             {/* <Popup>
                                 A pretty CSS3 popup. <br /> Easily customizable.
                             </Popup> */}

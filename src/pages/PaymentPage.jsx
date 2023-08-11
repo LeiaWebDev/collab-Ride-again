@@ -46,23 +46,27 @@ function PaymentPage() {
 
     <h2 id="payment-amount">Payment details for {paymentAmount} euros</h2>
 
-      <form onSubmit={handleSubmit} id='card-details'>
-        <div className='Card-number'>
-          <label className='card-labels'>Card Number</label>
-          <input className='card-inputs'
-              type='number'
-              name="number"
-              placeholder='Card Number'
-              value={number}
-              onChange={(e) => {
-                SetNumber(e.target.value);
-              }}
-              onFocus={(e) => SetFocus(e.target.name)}
-          >
-        </input>
+    <form onSubmit={handleSubmit} id='card-details'>
+      <div className='Card-number'>
+        <div className='card-labels'>
+          <label>Card Number</label>
         </div>
+      <div className='card-inputs'>
+          <input 
+                type='number'
+                name="number"
+                placeholder='Card Number'
+                value={number}
+                onChange={(e) => {
+                  SetNumber(e.target.value);
+                }}
+                onFocus={(e) => SetFocus(e.target.name)}
+              >
+          </input>
+        </div>  
+      </div>
 
-        <div className='Card-name'>
+      <div className='Card-name'>
           <label className='card-labels'>Card Name</label>
           <input className='card-inputs'
               type='text'
