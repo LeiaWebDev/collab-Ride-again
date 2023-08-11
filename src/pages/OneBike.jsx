@@ -22,16 +22,6 @@ function OneBike({ user }) {
         shadowAnchor: null
     });
 
-    const myIcon = L.icon({
-        iconUrl: `/marker-icon-2x.png`,
-        iconSize: [25, 41],
-        iconAnchor: [32, 64],
-        popupAnchor: null,
-        shadowUrl: `/marker-shadow.png`,
-        shadowSize: null,
-        shadowAnchor: null,
-    });
-
     //const [pendingPurchase, setPendingPurchase] = useState(false);
 
     useEffect(() => {

@@ -10,8 +10,31 @@ project Ride Again market place by Leia Taing and Conrad MacKay Leblanc
 
 ## Key features
 
-## Instructions
+- sign in/out, log in/out
+- json file made in-house as API
+- users that could be sellers and buyers
+- seller : create an ad, see my ads
+- payment form
+
+## Difficulties
+
+- css
+- navbar
+- edit ad button
+- leaflet map
+- URL
+- fetch pick up location from user in the create ad form
+- searchbar
 
 ## What's next
 
-## Link to the game:
+- button edit the ad
+- filters
+- cart to add more product
+- payment process + methods
+- more delivery options
+- have a real time backend
+
+## Link to the website:
+
+https://ride-again.netlify.app/
